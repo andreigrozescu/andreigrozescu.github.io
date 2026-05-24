@@ -5,7 +5,7 @@ html {
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: radial-gradient(circle at top, #0b1220, #050816);
+    background: #0b1220;
     color: white;
     line-height: 1.7;
 }
@@ -16,32 +16,29 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(10, 15, 30, 0.6);
-    backdrop-filter: blur(16px);
+    background: rgba(11, 18, 32, 0.8);
+    backdrop-filter: blur(14px);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 18px 10%;
-    z-index: 1000;
 }
 
 .logo {
-    font-weight: bold;
     color: #38bdf8;
-    letter-spacing: 3px;
+    font-weight: bold;
 }
 
 nav ul {
-    list-style: none;
     display: flex;
-    gap: 22px;
+    list-style: none;
+    gap: 20px;
 }
 
 nav a {
-    text-decoration: none;
     color: #cbd5e1;
+    text-decoration: none;
     transition: 0.3s;
-    font-size: 0.95rem;
 }
 
 nav a:hover {
@@ -58,44 +55,38 @@ nav a:hover {
 }
 
 .hero-content {
-    max-width: 900px;
+    max-width: 850px;
+    animation: fadeIn 1s ease-in;
 }
 
 .subtitle {
     color: #38bdf8;
-    letter-spacing: 2px;
-    font-size: 0.85rem;
+    letter-spacing: 1px;
 }
 
 .hero h1 {
-    font-size: 5rem;
-    margin: 10px 0;
-    background: linear-gradient(90deg, #38bdf8, #60a5fa);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-size: 4.5rem;
 }
 
 .hero h2 {
     color: #cbd5e1;
-    font-size: 1.6rem;
 }
 
 .description {
     color: #94a3b8;
-    max-width: 700px;
 }
 
 /* BUTTONS */
 
 .hero-buttons {
-    margin-top: 25px;
+    margin-top: 20px;
     display: flex;
     gap: 15px;
 }
 
 .button, .btn {
     padding: 12px 18px;
-    border-radius: 12px;
+    border-radius: 10px;
     text-decoration: none;
     font-weight: bold;
     transition: 0.3s;
@@ -108,8 +99,7 @@ nav a:hover {
 }
 
 .button:hover {
-    transform: translateY(-2px);
-    background: #0ea5e9;
+    transform: translateY(-3px);
 }
 
 .secondary {
@@ -126,42 +116,35 @@ section {
 
 section h2 {
     color: #38bdf8;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 /* CARD */
 
 .card {
-    background: rgba(30, 41, 59, 0.5);
-    border: 1px solid rgba(56, 189, 248, 0.15);
+    background: rgba(30, 41, 59, 0.6);
+    border: 1px solid rgba(56, 189, 248, 0.2);
     padding: 30px;
-    border-radius: 18px;
+    border-radius: 15px;
     max-width: 900px;
-    backdrop-filter: blur(10px);
+    margin-bottom: 20px;
 }
 
-/* PROJECT HIGHLIGHT */
+/* PROJECT FIX (IMPORTANT) */
 
-.highlight-card {
-    border: 1px solid #38bdf8;
-    box-shadow: 0 0 25px rgba(56, 189, 248, 0.1);
+.project-card p {
+    margin-bottom: 12px;
 }
 
-.project-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.badge {
-    background: #38bdf8;
-    color: black;
-    padding: 5px 10px;
-    border-radius: 999px;
-    font-size: 0.75rem;
+.project-actions {
+    margin-top: 20px;
 }
 
 /* TAGS */
+
+.tags {
+    margin-top: 15px;
+}
 
 .tags span {
     display: inline-block;
@@ -173,42 +156,12 @@ section h2 {
     margin-right: 5px;
 }
 
-/* UNIVERSITY */
-
-.uni-card {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.uni-title {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.uni-logo {
-    width: 50px;
-    height: 50px;
-    background: #38bdf8;
-    color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    border-radius: 10px;
-}
-
 /* CONTACT */
-
-.contact-card {
-    max-width: 500px;
-}
 
 .buttons {
     display: flex;
     gap: 15px;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .btn {
@@ -217,6 +170,18 @@ section h2 {
 }
 
 .btn:hover {
-    transform: translateY(-2px);
-    background: #0ea5e9;
+    transform: translateY(-3px);
+}
+
+/* ANIMATION REAL */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
