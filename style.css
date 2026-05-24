@@ -14,102 +14,56 @@ body {
 
 nav {
     position: fixed;
-    top: 0;
     width: 100%;
-    background: rgba(10, 15, 30, 0.6);
-    backdrop-filter: blur(16px);
+    top: 0;
+    padding: 18px 10%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 18px 10%;
+    background: rgba(10,15,30,0.7);
+    backdrop-filter: blur(14px);
     z-index: 1000;
 }
 
 .logo {
+    color: #38bdf8;
     font-weight: bold;
-    color: #38bdf8;
-    letter-spacing: 3px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 22px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #cbd5e1;
-    transition: 0.3s;
-    font-size: 0.95rem;
-}
-
-nav a:hover {
-    color: #38bdf8;
+    letter-spacing: 2px;
 }
 
 /* HERO */
 
 .hero {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    padding: 0 10%;
-}
-
-.hero-content {
-    max-width: 900px;
-}
-
-.subtitle {
-    color: #38bdf8;
-    letter-spacing: 2px;
-    font-size: 0.85rem;
+    padding: 140px 10% 80px;
 }
 
 .hero h1 {
-    font-size: 5rem;
-    margin: 10px 0;
+    font-size: 4.8rem;
+    margin: 0;
     background: linear-gradient(90deg, #38bdf8, #60a5fa);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.hero h2 {
-    color: #cbd5e1;
-    font-size: 1.6rem;
-}
-
-.description {
-    color: #94a3b8;
-    max-width: 700px;
-}
-
 /* BUTTONS */
 
-.hero-buttons {
-    margin-top: 25px;
+.hero-actions {
+    margin-top: 20px;
     display: flex;
     gap: 15px;
 }
 
-.button, .btn {
+.btn {
+    background: #38bdf8;
+    color: black;
     padding: 12px 18px;
-    border-radius: 12px;
+    border-radius: 10px;
     text-decoration: none;
     font-weight: bold;
     transition: 0.3s;
-    display: inline-block;
 }
 
-.button {
-    background: #38bdf8;
-    color: black;
-}
-
-.button:hover {
-    transform: translateY(-2px);
-    background: #0ea5e9;
+.btn:hover {
+    transform: translateY(-3px);
 }
 
 .secondary {
@@ -121,102 +75,58 @@ nav a:hover {
 /* SECTIONS */
 
 section {
-    padding: 120px 10%;
+    padding: 100px 10%;
 }
 
-section h2 {
+h2 {
     color: #38bdf8;
-    margin-bottom: 30px;
 }
 
-/* CARD */
+/* CARD (IMPORTANTE - LOOK PRO) */
 
 .card {
-    background: rgba(30, 41, 59, 0.5);
-    border: 1px solid rgba(56, 189, 248, 0.15);
+    background: rgba(30,41,59,0.55);
+    border: 1px solid rgba(56,189,248,0.15);
     padding: 30px;
-    border-radius: 18px;
-    max-width: 900px;
+    border-radius: 16px;
     backdrop-filter: blur(10px);
-}
-
-/* PROJECT HIGHLIGHT */
-
-.highlight-card {
-    border: 1px solid #38bdf8;
-    box-shadow: 0 0 25px rgba(56, 189, 248, 0.1);
-}
-
-.project-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.badge {
-    background: #38bdf8;
-    color: black;
-    padding: 5px 10px;
-    border-radius: 999px;
-    font-size: 0.75rem;
+    max-width: 900px;
 }
 
 /* TAGS */
 
 .tags span {
-    display: inline-block;
     border: 1px solid #38bdf8;
     color: #38bdf8;
     padding: 5px 10px;
     border-radius: 999px;
-    font-size: 0.8rem;
+    font-size: 12px;
     margin-right: 5px;
 }
 
-/* UNIVERSITY */
+/* SKILLS */
 
-.uni-card {
+.skills-grid {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 10px;
 }
 
-.uni-title {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+.skills-grid span {
+    background: #1e293b;
+    padding: 8px 12px;
+    border-radius: 8px;
 }
 
-.uni-logo {
-    width: 50px;
-    height: 50px;
-    background: #38bdf8;
-    color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    border-radius: 10px;
+/* REVEAL ANIMATION REAL */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease;
 }
 
-/* CONTACT */
-
-.contact-card {
-    max-width: 500px;
-}
-
-.buttons {
-    display: flex;
-    gap: 15px;
-    margin-top: 15px;
-}
-
-.btn {
-    background: #38bdf8;
-    color: black;
-}
-
-.btn:hover {
-    transform: translateY(-2px);
-    background: #0ea5e9;
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
 }
