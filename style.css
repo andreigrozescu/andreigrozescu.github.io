@@ -1,8 +1,15 @@
 body {
     margin: 0;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     background: #060913;
     color: white;
+}
+
+/* CONTAINER GLOBAL (ESTO ARREGLA TU PROBLEMA PRINCIPAL) */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 /* NAV */
@@ -10,12 +17,11 @@ nav {
     position: fixed;
     width: 100%;
     top: 0;
+    padding: 15px 40px;
     display: flex;
     justify-content: space-between;
-    padding: 15px;
     background: rgba(0,0,0,0.6);
     backdrop-filter: blur(10px);
-    z-index: 10;
 }
 
 .nav-links {
@@ -31,7 +37,7 @@ nav {
 
 /* HERO */
 .hero {
-    padding: 140px 10%;
+    padding: 140px 0 80px;
 }
 
 .hero h1 {
@@ -41,11 +47,18 @@ nav {
     -webkit-text-fill-color: transparent;
 }
 
-/* GRID */
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+/* BUTTONS */
+.btn {
+    background: #38bdf8;
+    padding: 10px 15px;
+    border-radius: 8px;
+    color: black;
+    text-decoration: none;
+}
+
+/* SECTIONS */
+section {
+    padding: 80px 0;
 }
 
 /* CARDS */
@@ -61,34 +74,30 @@ nav {
     border: 1px solid #38bdf8;
     padding: 5px 10px;
     border-radius: 999px;
-    margin: 3px;
-    display: inline-block;
+    margin-right: 5px;
 }
 
-/* BUTTONS */
-.btn {
-    background: #38bdf8;
-    padding: 10px 15px;
+/* SKILLS */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills-grid span {
+    background: #1e293b;
+    padding: 8px 12px;
     border-radius: 8px;
-    color: black;
-    text-decoration: none;
 }
 
 /* REVEAL */
 .reveal {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(20px);
     transition: 0.6s;
 }
 
 .reveal.active {
     opacity: 1;
     transform: translateY(0);
-}
-
-/* TERMINAL */
-.terminal {
-    background: black;
-    padding: 20px;
-    font-family: monospace;
 }
