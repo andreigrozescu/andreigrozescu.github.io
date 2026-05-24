@@ -13,49 +13,26 @@
 
 <canvas id="net"></canvas>
 
-<div class="page">
-
-<!-- NAV -->
-<nav>
-    <div class="logo">SOC // AG</div>
-
-    <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-
-    <div class="nav-controls">
-        <button onclick="toggleTheme()">Theme</button>
-        <button onclick="toggleLang()">EN/ES</button>
-        <a href="cv.pdf" download>CV</a>
-    </div>
-</nav>
-
 <!-- HERO -->
-<header class="hero reveal">
-    <div class="container">
+<section class="scene hero">
+    <div class="container reveal">
+        <h1 class="title">Andrei Grozescu</h1>
+        <h2 class="subtitle">Cybersecurity & IAM Engineer</h2>
 
-        <h1 class="glow">Andrei Grozescu</h1>
-        <h2>Cybersecurity & IAM Engineer</h2>
-
-        <p>
+        <p class="lead">
             IAM engineer at Accenture focused on identity security, authentication systems and cloud access governance.
         </p>
 
-        <div class="hero-actions">
-            <a href="#experience" class="btn">View Experience</a>
+        <div class="actions">
+            <a href="#about" class="btn">Explore Profile</a>
             <a href="https://oa.upm.es/94840/" target="_blank" class="btn secondary">Read Thesis</a>
         </div>
-
     </div>
-</header>
+</section>
 
 <!-- ABOUT -->
-<section id="about" class="reveal">
-    <div class="container">
+<section class="scene">
+    <div class="container reveal">
         <h2>About</h2>
 
         <div class="card">
@@ -79,11 +56,11 @@
 </section>
 
 <!-- EXPERIENCE -->
-<section id="experience" class="reveal">
-    <div class="container">
+<section class="scene">
+    <div class="container reveal">
         <h2>Experience</h2>
 
-        <div class="card">
+        <div class="card highlight">
             <h3>Accenture — IAM Engineer</h3>
 
             <p>
@@ -108,11 +85,11 @@
 </section>
 
 <!-- SKILLS -->
-<section id="skills" class="reveal">
-    <div class="container">
+<section class="scene">
+    <div class="container reveal">
         <h2>Skills</h2>
 
-        <div class="skills-grid">
+        <div class="skills">
             <span>IAM</span>
             <span>Okta</span>
             <span>Cybersecurity</span>
@@ -125,9 +102,10 @@
     </div>
 </section>
 
-<!-- PROJECTS -->
-<section id="projects" class="reveal">
-    <div class="container">
+<!-- THESIS -->
+<section class="scene thesis">
+    <div class="container reveal">
+
         <h2>Final Degree Project</h2>
 
         <div class="card">
@@ -142,23 +120,20 @@
 
             <p>
                 Current auditing tools typically focus on analyzing images statically and in isolation, without considering
-                the execution context or relationships between infrastructure components. This reduces operational visibility
-                and makes real-time vulnerability assessment difficult.
+                execution context or relationships between infrastructure components.
             </p>
 
             <p>
-                This Final Degree Project extends the C2T tool by incorporating dynamic monitoring and semantic Knowledge Graphs.
-                The system integrates data extraction, normalization, and unification from Docker containers, generating a graph
-                that represents images, layers, packages, and running containers.
+                This project extends a container auditing tool by integrating dynamic monitoring and semantic Knowledge Graphs.
+                It generates structured representations of containers, images, layers and dependencies.
             </p>
 
             <p>
-                The solution enables advanced SPARQL queries to identify vulnerabilities, analyze dependencies, audit configurations,
-                and trace the origin of failures. It was validated in a realistic environment and demonstrated scalability for
-                large infrastructures.
+                The system enables SPARQL-based analysis for vulnerability detection, dependency tracking and forensic analysis
+                in complex infrastructures.
             </p>
 
-            <a class="btn" href="https://oa.upm.es/94840/" target="_blank">
+            <a class="btn accent" href="https://oa.upm.es/94840/" target="_blank">
                 View Full Thesis
             </a>
 
@@ -167,20 +142,20 @@
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="reveal">
-    <div class="container">
+<section class="scene">
+    <div class="container reveal">
         <h2>Contact</h2>
 
         <div class="card">
             <p>Email: andrei.iulian951@gmail.com</p>
 
-            <a class="btn" href="https://github.com/andreigrozescu">GitHub</a>
-            <a class="btn" href="https://linkedin.com/in/andrei-iulian-717b89276/">LinkedIn</a>
+            <div class="actions">
+                <a class="btn" href="https://github.com/andreigrozescu">GitHub</a>
+                <a class="btn" href="https://linkedin.com/in/andrei-iulian-717b89276/">LinkedIn</a>
+            </div>
         </div>
     </div>
 </section>
-
-</div>
 
 </body>
 </html>
