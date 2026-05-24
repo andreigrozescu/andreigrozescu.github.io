@@ -7,147 +7,152 @@
 
 <link rel="stylesheet" href="style.css">
 <script defer src="app.js"></script>
+
+<!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
 
+<!-- BACKGROUND CANVAS -->
+<canvas id="net"></canvas>
+
+<!-- NAV -->
 <nav>
     <div class="logo">SOC // AG</div>
 
+    <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
     <div class="nav-controls">
-        <button onclick="toggleTheme()" class="small-btn">Theme</button>
-        <button onclick="toggleLang()" class="small-btn">EN/ES</button>
-        <a href="cv.pdf" class="small-btn" download>CV</a>
+        <button onclick="toggleTheme()">Theme</button>
+        <button onclick="toggleLang()">EN/ES</button>
+        <a href="cv.pdf" download>CV</a>
     </div>
 </nav>
 
+<!-- HERO -->
 <header class="hero reveal">
-    <div class="hero-content">
+    <h1>Andrei Grozescu</h1>
+    <h2>Cybersecurity & IAM Engineer</h2>
 
-        <h1 data-i18n="name">Andrei Grozescu</h1>
-        <h2 data-i18n="role">Cybersecurity & IAM Engineer</h2>
+    <p data-i18n="hero_desc">
+        IAM engineer at Accenture focused on identity security and cloud access governance.
+    </p>
 
-        <p data-i18n="hero_desc">
-            IAM engineer at Accenture focused on identity security, authentication systems and cloud access governance.
-        </p>
-
-        <div class="hero-actions">
-            <a href="#experience" class="btn">View Experience</a>
-            <a href="https://oa.upm.es/94840/" target="_blank" class="btn secondary">Read Thesis</a>
-        </div>
-
+    <div class="hero-actions">
+        <a href="#experience" class="btn">View Experience</a>
+        <a href="https://oa.upm.es/94840/" target="_blank" class="btn secondary">Read Thesis</a>
     </div>
 </header>
 
+<!-- ABOUT -->
 <section id="about" class="reveal">
     <h2>About</h2>
-
     <div class="card">
-        <p data-i18n="about">
-            Computer Engineering graduate specialized in cybersecurity and IAM.
-        </p>
-
-        <p>
-            Focused on identity security, cloud access control and scalable enterprise architectures.
-        </p>
+        <p data-i18n="about"></p>
     </div>
 </section>
 
+<!-- EXPERIENCE TIMELINE -->
 <section id="experience" class="reveal">
     <h2>Experience</h2>
 
-    <div class="card">
-        <h3>Accenture — IAM Engineer</h3>
+    <div class="timeline">
 
-        <p>
-            Working on enterprise Identity & Access Management systems, focusing on authentication, access governance and identity lifecycle management.
-        </p>
-
-        <ul>
-            <li>Identity lifecycle management</li>
-            <li>Access control policies (least privilege)</li>
-            <li>IAM platform operations (Okta)</li>
-            <li>Security compliance support</li>
-        </ul>
-
-        <div class="tags">
-            <span>IAM</span>
-            <span>Okta</span>
-            <span>Cybersecurity</span>
+        <div class="item">
+            <h3>Accenture</h3>
+            <p>IAM Engineer</p>
+            <span>Identity lifecycle, Okta, access governance</span>
         </div>
+
     </div>
 </section>
 
+<!-- SKILLS DASHBOARD -->
 <section id="skills" class="reveal">
-    <h2>Skills</h2>
+    <h2>Skills Intelligence</h2>
 
-    <div class="skills-grid">
-        <span>Cybersecurity</span>
-        <span>IAM</span>
-        <span>Okta</span>
-        <span>AWS</span>
-        <span>Docker</span>
-        <span>Linux</span>
-        <span>Python</span>
-        <span>SPARQL</span>
-        <span>Knowledge Graphs</span>
+    <div class="grid">
+
+        <div class="card">
+            <canvas id="skillsChart"></canvas>
+        </div>
+
+        <div class="card">
+            <h3>Tech Stack</h3>
+
+            <div class="tags">
+                <span>IAM</span>
+                <span>Okta</span>
+                <span>Cybersecurity</span>
+                <span>AWS</span>
+                <span>Docker</span>
+                <span>Linux</span>
+                <span>SPARQL</span>
+                <span>Knowledge Graphs</span>
+            </div>
+        </div>
+
     </div>
 </section>
 
+<!-- PROJECTS -->
 <section id="projects" class="reveal">
     <h2>Projects</h2>
 
-    <div class="card project-card">
-
-        <h3>Knowledge Graph-Based Container Security Monitoring</h3>
-
-        <p>
-            Final Degree Project focused on improving security visibility in containerized environments using semantic knowledge graphs.
-        </p>
+    <div class="card">
+        <h3>Knowledge Graph Security Monitoring</h3>
 
         <p>
-            Enables vulnerability detection, dependency tracing and infrastructure-level security auditing.
+            Container security analysis using RDF graphs and SPARQL querying.
         </p>
 
-        <div class="tags">
-            <span>Docker</span>
-            <span>Knowledge Graphs</span>
-            <span>SPARQL</span>
-            <span>Security Analysis</span>
-        </div>
-
-        <div class="project-actions">
-            <a class="btn" href="https://oa.upm.es/94840/" target="_blank">
-                View Thesis
-            </a>
-        </div>
-
+        <a class="btn" href="https://oa.upm.es/94840/" target="_blank">
+            View Thesis
+        </a>
     </div>
 </section>
 
+<!-- BLOG -->
 <section id="blog" class="reveal">
     <h2>Blog</h2>
 
     <div class="card">
-        <h3>Identity & Access Management in Modern Enterprises</h3>
-        <p>
-            IAM is a core pillar of cybersecurity ensuring secure authentication, authorization and identity governance.
-        </p>
+        <h3>IAM in Cloud Security</h3>
+        <p>Identity is the new perimeter in distributed systems.</p>
+    </div>
+
+    <div class="card">
+        <h3>Zero Trust Architecture</h3>
+        <p>Never trust, always verify.</p>
     </div>
 </section>
 
+<!-- TERMINAL -->
+<section class="reveal">
+    <h2>Terminal</h2>
+
+    <div class="terminal" onclick="runTerminal()">
+        <p>> click to run scan...</p>
+    </div>
+</section>
+
+<!-- CONTACT -->
 <section id="contact" class="reveal">
     <h2>Contact</h2>
 
-    <div class="card contact-card">
-
+    <div class="card">
         <p>Email: andrei.iulian951@gmail.com</p>
 
-        <div class="buttons">
-            <a class="btn" href="https://github.com/andreigrozescu">GitHub</a>
-            <a class="btn" href="https://linkedin.com/in/andrei-iulian-717b89276/">LinkedIn</a>
-        </div>
-
+        <a class="btn" href="https://github.com/andreigrozescu">GitHub</a>
+        <a class="btn" href="https://linkedin.com/in/andrei-iulian-717b89276/">LinkedIn</a>
     </div>
 </section>
 
