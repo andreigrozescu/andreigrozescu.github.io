@@ -2,22 +2,22 @@ const obs = new IntersectionObserver(entries => {
     entries.forEach(e => {
         if (e.isIntersecting) e.target.classList.add("active");
     });
-}, { threshold: 0.1 });
+}, { threshold: 0.15 });
 
 document.querySelectorAll(".reveal").forEach(e => obs.observe(e));
 
-/* BACKGROUND SAFE */
+/* BACKGROUND NETWORK (SOC STYLE) */
 const canvas = document.getElementById("net");
 const ctx = canvas.getContext("2d");
 
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-let dots = Array.from({length: 60}, () => ({
+let dots = Array.from({length: 70}, () => ({
     x: Math.random() * canvas.width,
     y: Math.random() * canvas.height,
-    vx: (Math.random() - 0.5),
-    vy: (Math.random() - 0.5)
+    vx: (Math.random() - 0.5) * 0.8,
+    vy: (Math.random() - 0.5) * 0.8
 }));
 
 function animate() {
