@@ -8,7 +8,6 @@
 <link rel="stylesheet" href="style.css">
 <script defer src="app.js"></script>
 
-<!-- Apple-like font -->
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
@@ -98,14 +97,21 @@
         <h2>Skills</h2>
 
         <div class="skills">
-            <span>IAM</span>
-            <span>Okta</span>
-            <span>AWS</span>
-            <span>Docker</span>
-            <span>Linux</span>
-            <span>SPARQL</span>
-            <span>Knowledge Graphs</span>
+
+            <span class="skill active" data-skill="iam">IAM</span>
+            <span class="skill" data-skill="okta">Okta</span>
+            <span class="skill" data-skill="cyber">Cybersecurity</span>
+            <span class="skill" data-skill="docker">Docker</span>
+            <span class="skill" data-skill="linux">Linux</span>
+            <span class="skill" data-skill="sparql">SPARQL</span>
+            <span class="skill" data-skill="kg">Knowledge Graphs</span>
+
         </div>
+
+        <div class="skill-box" id="skillBox">
+            Identity lifecycle management, authentication systems and enterprise IAM governance.
+        </div>
+
     </div>
 </section>
 
@@ -120,30 +126,17 @@
             <h3>Knowledge Graph-Based Container Security Monitoring</h3>
 
             <p>
-                The widespread adoption of container technologies such as Docker has transformed modern software deployment, but it has also introduced significant challenges in terms of visibility, security, and operational traceability across distributed infrastructures.
-            </p>
-
-            <p>
-                This thesis addresses the limitations of traditional auditing tools, which typically rely on static and isolated image analysis, by proposing an extended system that integrates dynamic monitoring with semantic Knowledge Graphs to improve infrastructure understanding.
-            </p>
-
-            <p>
-                The proposed solution, implemented as an extension of the C2T tool, enables unified representation of containers, images, layers, packages, and runtime environments. This allows advanced SPARQL-based analysis for vulnerability detection, dependency tracking, and forensic investigation of security issues across the full container lifecycle.
-            </p>
-
-            <p>
-                The system was validated in a realistic heterogeneous environment, demonstrating its ability to correlate vulnerabilities with deployed assets and trace the origin of configuration and build-time issues. Scalability tests confirmed its suitability for large-scale infrastructures with thousands of containers and millions of RDF triples.
+                Container security research using Knowledge Graphs, Docker monitoring and SPARQL-based analysis for vulnerability detection and infrastructure traceability.
             </p>
 
             <a class="btn accent" href="https://oa.upm.es/94840/" target="_blank">
                 View Thesis
             </a>
-
         </div>
     </div>
 </section>
 
-<!-- CV SECTION -->
+<!-- CV -->
 <section id="cv" class="scene">
     <div class="container reveal">
 
@@ -153,16 +146,14 @@
 
             <div class="card">
                 <p>
-                    Download my full CV in PDF format.
+                    Download or preview my professional CV.
                 </p>
 
                 <a class="btn" href="cv.pdf" target="_blank">Download CV</a>
             </div>
 
-            <!-- IMAGE PLACEHOLDER (optional screenshot style) -->
             <div class="cv-preview">
-                <!-- sube imagen como cv.png si quieres -->
-                <img src="cv.png" alt="CV preview">
+                <img src="cv-photo.jpeg" id="cvPhoto" alt="CV preview">
             </div>
 
         </div>
@@ -179,7 +170,7 @@
 
             <div class="actions">
                 <a class="btn" href="https://github.com/andreigrozescu">GitHub</a>
-                <a class="btn" href="https://linkedin.com/in/andrei-iulian-717b89276/">LinkedIn</a>
+                <a class="btn" href="https://linkedin.com/in/andrei-grozescu-717b89276/">LinkedIn</a>
             </div>
         </div>
     </div>
