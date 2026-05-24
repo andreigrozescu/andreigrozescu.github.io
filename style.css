@@ -4,26 +4,24 @@ html {
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Arial", sans-serif;
     background-color: #0f172a;
     color: white;
     line-height: 1.7;
 }
 
-/* =========================
-   NAVBAR
-========================= */
+/* ================= NAVBAR ================= */
 
 nav {
     position: fixed;
-    width: 100%;
     top: 0;
-    background-color: rgba(15, 23, 42, 0.85);
+    width: 100%;
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(12px);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 18px 10%;
-    backdrop-filter: blur(12px);
     z-index: 1000;
     box-sizing: border-box;
 }
@@ -55,7 +53,7 @@ nav a:hover {
 }
 
 nav a::after {
-    content: '';
+    content: "";
     display: block;
     width: 0;
     height: 2px;
@@ -68,60 +66,62 @@ nav a:hover::after {
     width: 100%;
 }
 
-/* =========================
-   HERO
-========================= */
+/* ================= HERO ================= */
 
 .hero {
     height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: center;
     padding: 0 10%;
-    background:
-        radial-gradient(circle at top right, rgba(56, 189, 248, 0.15), transparent 40%);
+    background: radial-gradient(circle at top right, rgba(56, 189, 248, 0.15), transparent 40%);
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.subtitle {
+    color: #38bdf8;
+    font-weight: 500;
+    letter-spacing: 1px;
 }
 
 .hero h1 {
     font-size: 5rem;
-    margin-bottom: 0;
+    margin: 10px 0;
 }
 
 .hero h2 {
-    color: #38bdf8;
-    margin-top: 10px;
-    font-size: 2rem;
+    font-size: 1.8rem;
+    color: #cbd5e1;
+    margin-bottom: 20px;
 }
 
-.hero p {
-    max-width: 700px;
-    margin-top: 20px;
-    font-size: 1.2rem;
+.description {
+    font-size: 1.1rem;
+    color: #94a3b8;
 }
 
-/* =========================
-   BUTTON
-========================= */
+/* ================= BUTTON ================= */
 
 .button {
-    margin-top: 30px;
-    width: fit-content;
+    display: inline-block;
+    margin-top: 25px;
     padding: 14px 28px;
     background-color: #38bdf8;
     color: black;
     text-decoration: none;
-    border-radius: 10px;
     font-weight: bold;
+    border-radius: 10px;
     transition: 0.3s;
 }
 
 .button:hover {
     transform: translateY(-2px);
+    background-color: #0ea5e9;
 }
 
-/* =========================
-   SECTIONS
-========================= */
+/* ================= SECTIONS ================= */
 
 section {
     padding: 120px 10%;
@@ -129,41 +129,41 @@ section {
 
 section h2 {
     color: #38bdf8;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     font-size: 2rem;
 }
 
-/* =========================
-   CARD
-========================= */
+/* ================= CARD ================= */
 
 .card {
-    background-color: #1e293b;
+    background: #1e293b;
     padding: 30px;
     border-radius: 16px;
     max-width: 900px;
 }
 
-/* =========================
-   SKILLS
-========================= */
+/* ================= SKILLS ================= */
 
 .skills-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 12px;
 }
 
 .skills-grid span {
-    background-color: #1e293b;
-    padding: 12px 18px;
+    background: #1e293b;
+    padding: 10px 16px;
     border-radius: 10px;
+    font-size: 0.95rem;
 }
 
-/* =========================
-   CONTACT
-========================= */
+/* ================= CONTACT ================= */
 
-#contact p {
-    margin: 10px 0;
+#contact a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
 }
