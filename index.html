@@ -9,120 +9,172 @@
 
 <body>
 
-    <!-- NAVBAR -->
-    <nav>
-        <div class="logo">AG</div>
+<!-- NAV -->
+<nav>
+    <div class="logo">AG</div>
+
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+    <div class="hero-content">
+
+        <p class="subtitle">Cybersecurity • Identity & Access Management • Cloud Security</p>
+
+        <h1>Andrei Grozescu</h1>
+
+        <h2>Cybersecurity / IAM Engineer at Accenture</h2>
+
+        <p class="description">
+            Computer Engineering graduate specialized in cybersecurity and Identity & Access Management (IAM).
+            Currently working at Accenture, focusing on secure identity systems, authentication flows,
+            and enterprise access control in large-scale environments.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#about" class="button">Explore Profile</a>
+            <a href="#project" class="button secondary">View Project</a>
+        </div>
+
+    </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Me</h2>
+
+    <div class="card">
+
+        <p>
+            I am a Computer Engineering graduate currently working in cybersecurity at Accenture,
+            specialized in Identity and Access Management (IAM).
+        </p>
+
+        <p>
+            My role focuses on ensuring secure access to enterprise systems through identity governance,
+            authentication mechanisms, and access control policies.
+        </p>
+
+        <p>
+            I am particularly interested in scalable security architectures, cloud identity platforms,
+            and improving visibility and control in complex infrastructures.
+        </p>
+
+    </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+    <h2>Professional Experience</h2>
+
+    <div class="card">
+
+        <h3>Accenture — IAM Engineer</h3>
+
+        <p>
+            Working within Identity and Access Management (IAM) projects for enterprise environments,
+            contributing to secure authentication systems, identity lifecycle management, and access governance.
+        </p>
 
         <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#project">Project</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li>Administration and support of IAM workflows and access policies</li>
+            <li>Collaboration with security teams to enforce least-privilege principles</li>
+            <li>Support for identity lifecycle processes (onboarding / offboarding)</li>
+            <li>Use of enterprise IAM platforms such as Okta</li>
         </ul>
-    </nav>
 
-    <!-- HERO -->
-    <header class="hero">
-        <div class="hero-content">
-
-            <p class="subtitle">Cybersecurity • IAM • Cloud Security</p>
-
-            <h1>Andrei Grozescu</h1>
-
-            <h2>Cybersecurity & Identity Access Management Engineer</h2>
-
-            <p class="description">
-                Computer Engineering graduate working in cybersecurity at Accenture,
-                specialized in Identity and Access Management (IAM), secure authentication,
-                and enterprise infrastructure protection.
-            </p>
-
-            <a href="#about" class="button">Explore Portfolio</a>
-
-        </div>
-    </header>
-
-    <!-- ABOUT -->
-    <section id="about">
-        <h2>About Me</h2>
-
-        <div class="card">
-            <p>
-                I am a Computer Engineering graduate currently working at Accenture,
-                specializing in Identity and Access Management (IAM) within the cybersecurity domain.
-            </p>
-
-            <p>
-                My interests focus on cybersecurity operations, infrastructure visibility,
-                vulnerability analysis, and secure system design.
-            </p>
-        </div>
-    </section>
-
-    <!-- EXPERIENCE -->
-    <section id="experience">
-        <h2>Experience</h2>
-
-        <div class="card">
-            <h3>Accenture</h3>
-
-            <p>
-                Working in Identity and Access Management (IAM), contributing to secure authentication,
-                identity governance, and access control policies in enterprise environments.
-            </p>
-
-            <p>
-                Experience with IAM platforms such as Okta and enterprise security workflows.
-            </p>
-        </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section id="skills">
-        <h2>Skills</h2>
-
-        <div class="skills-grid">
-            <span>Cybersecurity</span>
+        <div class="tags">
             <span>IAM</span>
             <span>Okta</span>
+            <span>Cybersecurity</span>
+            <span>Access Control</span>
+        </div>
+
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2>Technical Skills</h2>
+
+    <div class="skills-grid">
+
+        <span>Cybersecurity</span>
+        <span>Identity & Access Management</span>
+        <span>Okta</span>
+        <span>Linux</span>
+        <span>Docker</span>
+        <span>AWS</span>
+        <span>Python</span>
+        <span>SPARQL</span>
+        <span>RDF / Knowledge Graphs</span>
+        <span>Git / GitHub</span>
+
+    </div>
+</section>
+
+<!-- PROJECT -->
+<section id="project">
+    <h2>Final Degree Project</h2>
+
+    <div class="card">
+
+        <h3>Knowledge Graphs for Container Security Monitoring</h3>
+
+        <p>
+            My Final Degree Project focused on improving security visibility in containerized environments
+            through the use of knowledge graphs.
+        </p>
+
+        <p>
+            The system extends Docker container analysis by combining static and dynamic data sources
+            to build a unified semantic model of infrastructure components.
+        </p>
+
+        <p>
+            This enables advanced queries for vulnerability detection, dependency tracing,
+            and security auditing in complex distributed systems.
+        </p>
+
+        <div class="tags">
             <span>Docker</span>
-            <span>Python</span>
-            <span>Linux</span>
-            <span>AWS</span>
+            <span>Knowledge Graphs</span>
+            <span>Security</span>
             <span>SPARQL</span>
-            <span>RDF</span>
-            <span>Git</span>
         </div>
-    </section>
 
-    <!-- PROJECT -->
-    <section id="project">
-        <h2>Featured Project</h2>
+    </div>
+</section>
 
-        <div class="card">
-            <h3>Knowledge Graph-Based Container Security Monitoring</h3>
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact</h2>
 
-            <p>
-                Final Degree Project focused on enhancing container security monitoring
-                through knowledge graphs, enabling vulnerability detection, dependency tracing,
-                and infrastructure-level observability in Docker environments.
-            </p>
+    <div class="card contact-card">
+
+        <p><strong>Email:</strong> andrei.iulian951@gmail.com</p>
+
+        <div class="buttons">
+
+            <a class="btn" href="https://github.com/andreigrozescu" target="_blank">
+                GitHub
+            </a>
+
+            <a class="btn" href="https://linkedin.com/in/andrei-iulian-717b89276/" target="_blank">
+                LinkedIn
+            </a>
+
         </div>
-    </section>
 
-    <!-- CONTACT -->
-    <section id="contact">
-        <h2>Contact</h2>
-
-        <div class="card">
-            <p>Email: <a href="mailto:andrei.iulian951@gmail.com">andrei.iulian951@gmail.com</a></p>
-
-            <p>GitHub: <a href="https://github.com/andreigrozescu" target="_blank">github.com/andreigrozescu</a></p>
-
-            <p>LinkedIn: <a href="https://linkedin.com/in/andrei-iulian-717b89276/" target="_blank">LinkedIn Profile</a></p>
-        </div>
-    </section>
+    </div>
+</section>
 
 </body>
 </html>
