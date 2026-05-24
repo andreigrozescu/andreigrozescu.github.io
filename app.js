@@ -6,7 +6,7 @@ const obs = new IntersectionObserver(entries => {
 
 document.querySelectorAll(".reveal").forEach(e => obs.observe(e));
 
-/* BACKGROUND NETWORK (SOC STYLE) */
+/* BACKGROUND NETWORK */
 const canvas = document.getElementById("net");
 const ctx = canvas.getContext("2d");
 
