@@ -10,19 +10,22 @@ body {
     line-height: 1.7;
 }
 
-/* NAVBAR */
+/* =========================
+   NAVBAR
+========================= */
 
 nav {
     position: fixed;
     width: 100%;
     top: 0;
-    background-color: rgba(15, 23, 42, 0.9);
+    background-color: rgba(15, 23, 42, 0.85);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 10%;
+    padding: 18px 10%;
+    backdrop-filter: blur(12px);
+    z-index: 1000;
     box-sizing: border-box;
-    backdrop-filter: blur(10px);
 }
 
 .logo {
@@ -34,7 +37,7 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 25px;
+    gap: 30px;
     margin: 0;
     padding: 0;
 }
@@ -42,14 +45,32 @@ nav ul {
 nav a {
     text-decoration: none;
     color: white;
+    font-weight: 500;
     transition: 0.3s;
+    position: relative;
 }
 
 nav a:hover {
     color: #38bdf8;
 }
 
-/* HERO */
+nav a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #38bdf8;
+    transition: width 0.3s;
+    margin-top: 5px;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* =========================
+   HERO
+========================= */
 
 .hero {
     height: 100vh;
@@ -58,7 +79,7 @@ nav a:hover {
     justify-content: center;
     padding: 0 10%;
     background:
-        radial-gradient(circle at top right, rgba(56, 189, 248, 0.15), transparent 30%);
+        radial-gradient(circle at top right, rgba(56, 189, 248, 0.15), transparent 40%);
 }
 
 .hero h1 {
@@ -78,7 +99,9 @@ nav a:hover {
     font-size: 1.2rem;
 }
 
-/* BUTTON */
+/* =========================
+   BUTTON
+========================= */
 
 .button {
     margin-top: 30px;
@@ -96,7 +119,9 @@ nav a:hover {
     transform: translateY(-2px);
 }
 
-/* SECTIONS */
+/* =========================
+   SECTIONS
+========================= */
 
 section {
     padding: 120px 10%;
@@ -108,7 +133,9 @@ section h2 {
     font-size: 2rem;
 }
 
-/* CARD */
+/* =========================
+   CARD
+========================= */
 
 .card {
     background-color: #1e293b;
@@ -117,7 +144,9 @@ section h2 {
     max-width: 900px;
 }
 
-/* SKILLS */
+/* =========================
+   SKILLS
+========================= */
 
 .skills-grid {
     display: flex;
@@ -131,7 +160,9 @@ section h2 {
     border-radius: 10px;
 }
 
-/* CONTACT */
+/* =========================
+   CONTACT
+========================= */
 
 #contact p {
     margin: 10px 0;
