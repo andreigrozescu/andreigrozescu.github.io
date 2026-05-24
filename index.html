@@ -1,77 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrei Grozescu | Cybersecurity & IAM Engineer</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Andrei Grozescu | Cybersecurity Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="app.js"></script>
 </head>
 
 <body>
 
+<!-- NAV -->
 <nav>
-    <div class="logo">AG</div>
+    <div class="logo">SOC // AG</div>
 
-    <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
+    <div class="nav-controls">
+        <button onclick="toggleTheme()" class="small-btn">Theme</button>
+        <button onclick="toggleLang()" class="small-btn">EN/ES</button>
+        <a href="cv.pdf" class="small-btn" download>CV</a>
+    </div>
 </nav>
 
-<header class="hero">
+<!-- HERO -->
+<header class="hero reveal">
     <div class="hero-content">
 
-        <p class="subtitle">Cybersecurity • Identity & Access Management • Cloud Security</p>
+        <h1 data-i18n="name">Andrei Grozescu</h1>
+        <h2 data-i18n="role">Cybersecurity & IAM Engineer</h2>
 
-        <h1>Andrei Grozescu</h1>
-
-        <h2>Cybersecurity & IAM Engineer</h2>
-
-        <p class="description">
-            Computer Engineering graduate working in Identity & Access Management (IAM) at Accenture,
-            focused on secure identity systems, authentication flows and enterprise security architecture.
+        <p data-i18n="hero_desc">
+            IAM engineer at Accenture focused on identity security, authentication systems and cloud access governance.
         </p>
 
-        <div class="hero-buttons">
-            <a href="#projects" class="button">View Projects</a>
-            <a href="https://oa.upm.es/94840/" target="_blank" class="button secondary">Read Thesis</a>
+        <div class="hero-actions">
+            <a href="#experience" class="btn">View Experience</a>
+            <a href="https://oa.upm.es/94840/" target="_blank" class="btn secondary">Read Thesis</a>
         </div>
 
     </div>
 </header>
 
-<section id="about">
-    <h2>About Me</h2>
+<!-- ABOUT -->
+<section id="about" class="reveal">
+    <h2>About</h2>
 
     <div class="card">
-        <p>
+        <p data-i18n="about">
             Computer Engineering graduate specialized in cybersecurity and Identity & Access Management (IAM).
         </p>
 
         <p>
-            Focused on secure identity systems, access control policies and scalable cloud security architectures.
+            Focused on secure identity systems, cloud security architectures and enterprise access control.
         </p>
     </div>
 </section>
 
-<section id="experience">
+<!-- EXPERIENCE -->
+<section id="experience" class="reveal">
     <h2>Experience</h2>
 
     <div class="card">
         <h3>Accenture — IAM Engineer</h3>
 
         <p>
-            Working on enterprise IAM solutions supporting authentication, identity lifecycle and access governance.
+            Working on enterprise Identity & Access Management solutions, supporting authentication,
+            identity lifecycle management and access governance.
         </p>
 
         <ul>
-            <li>Identity lifecycle management</li>
-            <li>Access control & least privilege policies</li>
+            <li>Identity lifecycle management (joiners, movers, leavers)</li>
+            <li>Access control policies (least privilege)</li>
             <li>IAM platform operations (Okta)</li>
             <li>Security compliance support</li>
         </ul>
@@ -84,7 +82,8 @@
     </div>
 </section>
 
-<section id="skills">
+<!-- SKILLS -->
+<section id="skills" class="reveal">
     <h2>Skills</h2>
 
     <div class="skills-grid">
@@ -100,7 +99,8 @@
     </div>
 </section>
 
-<section id="projects">
+<!-- PROJECTS -->
+<section id="projects" class="reveal">
     <h2>Projects</h2>
 
     <div class="card project-card">
@@ -109,11 +109,10 @@
 
         <p>
             Final Degree Project focused on improving container security visibility using semantic knowledge graphs.
-            The system integrates static and dynamic analysis of Docker environments.
         </p>
 
         <p>
-            It enables vulnerability detection, dependency tracing and infrastructure-level security auditing.
+            The system integrates static and dynamic analysis of Docker environments for vulnerability detection and traceability.
         </p>
 
         <div class="tags">
@@ -124,15 +123,16 @@
         </div>
 
         <div class="project-actions">
-            <a href="https://oa.upm.es/94840/" target="_blank" class="button">
-                View Full Thesis
+            <a class="btn" href="https://oa.upm.es/94840/" target="_blank">
+                View Thesis
             </a>
         </div>
 
     </div>
 </section>
 
-<section id="education">
+<!-- EDUCATION -->
+<section id="education" class="reveal">
     <h2>Education</h2>
 
     <div class="card">
@@ -141,19 +141,20 @@
     </div>
 </section>
 
-<section id="blog">
-    <h2>Technical Blog</h2>
+<!-- BLOG -->
+<section id="blog" class="reveal">
+    <h2>Blog</h2>
 
     <div class="card">
         <h3>Identity & Access Management in Modern Enterprises</h3>
-
         <p>
-            IAM ensures secure authentication, authorization and identity governance across enterprise systems.
+            IAM ensures secure authentication and authorization in distributed systems and cloud environments.
         </p>
     </div>
 </section>
 
-<section id="contact">
+<!-- CONTACT -->
+<section id="contact" class="reveal">
     <h2>Contact</h2>
 
     <div class="card contact-card">
@@ -161,11 +162,8 @@
         <p>Email: andrei.iulian951@gmail.com</p>
 
         <div class="buttons">
-
-            <a class="btn" href="https://github.com/andreigrozescu" target="_blank">GitHub</a>
-
-            <a class="btn" href="https://linkedin.com/in/andrei-iulian-717b89276/" target="_blank">LinkedIn</a>
-
+            <a class="btn" href="https://github.com/andreigrozescu">GitHub</a>
+            <a class="btn" href="https://linkedin.com/in/andrei-iulian-717b89276/">LinkedIn</a>
         </div>
 
     </div>
