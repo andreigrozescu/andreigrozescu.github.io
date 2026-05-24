@@ -11,6 +11,9 @@
 
 <body>
 
+<!-- BACKGROUND NETWORK -->
+<canvas id="net"></canvas>
+
 <!-- NAV -->
 <nav>
     <div class="logo">SOC // AG</div>
@@ -20,7 +23,6 @@
         <li><a href="#experience">Experience</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#blog">Blog</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
 
@@ -35,7 +37,7 @@
 <header class="hero reveal">
     <div class="container">
 
-        <h1>Andrei Grozescu</h1>
+        <h1 class="glow">Andrei Grozescu</h1>
         <h2>Cybersecurity & IAM Engineer</h2>
 
         <p>
@@ -57,7 +59,11 @@
 
         <div class="card">
             <p>
-                Computer Engineering graduate specialized in cybersecurity and IAM.
+                Computer Engineering graduate specialized in cybersecurity and Identity & Access Management (IAM).
+            </p>
+
+            <p>
+                Focused on secure identity systems, cloud security architectures and enterprise access control.
             </p>
         </div>
     </div>
@@ -72,30 +78,64 @@
             <h3>Accenture — IAM Engineer</h3>
 
             <p>
-                Identity lifecycle management, access governance and enterprise IAM operations.
+                Working on enterprise Identity & Access Management solutions, supporting authentication,
+                identity lifecycle management and access governance.
             </p>
+
+            <ul>
+                <li>Identity lifecycle management (joiners, movers, leavers)</li>
+                <li>Access control policies (least privilege)</li>
+                <li>IAM platform operations (Okta)</li>
+                <li>Security compliance support</li>
+            </ul>
 
             <div class="tags">
                 <span>IAM</span>
-                <span>Okta</span>
-                <span>Cybersecurity</span>
+                <span>Security</span>
+                <span>Cloud</span>
             </div>
         </div>
     </div>
 </section>
 
-<!-- SKILLS (SIMPLIFICADO, SIN GRÁFICO) -->
+<!-- SKILLS WITH LOGOS -->
 <section id="skills" class="reveal">
     <div class="container">
-        <h2>Skills</h2>
+        <h2>Skills & Technologies</h2>
 
-        <div class="skills-grid">
+        <div class="logos">
+
+            <!-- AWS -->
+            <div class="logo-box">
+                <svg viewBox="0 0 24 24">
+                    <path fill="#ff9900" d="M3 12c3-6 15-6 18 0-3 6-15 6-18 0z"/>
+                </svg>
+                <span>AWS</span>
+            </div>
+
+            <!-- OKTA -->
+            <div class="logo-box">
+                <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10" fill="#007dc1"/>
+                </svg>
+                <span>Okta</span>
+            </div>
+
+            <!-- DOCKER -->
+            <div class="logo-box">
+                <svg viewBox="0 0 24 24">
+                    <rect width="24" height="24" fill="#0db7ed"/>
+                </svg>
+                <span>Docker</span>
+            </div>
+
+        </div>
+
+        <div class="tags">
             <span>IAM</span>
-            <span>Okta</span>
             <span>Cybersecurity</span>
-            <span>AWS</span>
-            <span>Docker</span>
             <span>Linux</span>
+            <span>Python</span>
             <span>SPARQL</span>
             <span>Knowledge Graphs</span>
         </div>
@@ -105,30 +145,24 @@
 <!-- PROJECTS -->
 <section id="projects" class="reveal">
     <div class="container">
-        <h2>Projects</h2>
+        <h2>Final Degree Project</h2>
 
-        <div class="card">
-            <h3>Knowledge Graph Security Monitoring</h3>
+        <div class="card highlight">
+
+            <h3>Knowledge Graph-Based Container Security Monitoring</h3>
 
             <p>
-                Container security analysis using RDF graphs and SPARQL.
+                Final Degree Project focused on improving container security visibility using semantic knowledge graphs.
+            </p>
+
+            <p>
+                The system integrates static and dynamic analysis of Docker environments for vulnerability detection and traceability.
             </p>
 
             <a class="btn" href="https://oa.upm.es/94840/" target="_blank">
-                View Thesis
+                View Full Thesis
             </a>
-        </div>
-    </div>
-</section>
 
-<!-- BLOG -->
-<section id="blog" class="reveal">
-    <div class="container">
-        <h2>Blog</h2>
-
-        <div class="card">
-            <h3>IAM in Cloud Security</h3>
-            <p>Identity is the new perimeter in distributed systems.</p>
         </div>
     </div>
 </section>
@@ -139,10 +173,14 @@
         <h2>Contact</h2>
 
         <div class="card">
+
             <p>Email: andrei.iulian951@gmail.com</p>
 
-            <a class="btn" href="https://github.com/andreigrozescu">GitHub</a>
-            <a class="btn" href="https://linkedin.com/in/andrei-iulian-717b89276/">LinkedIn</a>
+            <div class="buttons">
+                <a class="btn" href="https://github.com/andreigrozescu">GitHub</a>
+                <a class="btn" href="https://linkedin.com/in/andrei-iulian-717b89276/">LinkedIn</a>
+            </div>
+
         </div>
     </div>
 </section>
