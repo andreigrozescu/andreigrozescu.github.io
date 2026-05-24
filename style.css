@@ -1,9 +1,10 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
     background: #050816;
     color: white;
     overflow-x: hidden;
+    line-height: 1.6;
 }
 
 /* BACKGROUND */
@@ -14,17 +15,42 @@ body {
     z-index: 0;
 }
 
-/* SCENES (CLAVE PARA EFECTO APPLE) */
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    padding: 14px;
+    background: rgba(5,8,22,0.7);
+    backdrop-filter: blur(12px);
+    z-index: 1000;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.navbar a:hover {
+    opacity: 1;
+}
+
+/* SCENES */
 .scene {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding: 100px 0;
+    padding: 140px 0;
     position: relative;
     z-index: 2;
 }
 
-/* CONTAINER CENTRADO */
+/* CONTAINER */
 .container {
     max-width: 1000px;
     margin: auto;
@@ -33,10 +59,18 @@ body {
 
 /* TITLES */
 .title {
-    font-size: 64px;
+    font-size: 78px;
+    font-weight: 700;
+    letter-spacing: -2px;
     background: linear-gradient(90deg,#38bdf8,#f97316);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+h2 {
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 20px;
 }
 
 .subtitle {
@@ -46,21 +80,16 @@ body {
 /* CARDS */
 .card {
     background: rgba(255,255,255,0.05);
-    padding: 30px;
-    border-radius: 16px;
-    border: 1px solid rgba(56,189,248,0.2);
-}
-
-/* HIGHLIGHT ORANGE (THESIS) */
-.highlight {
-    border: 1px solid #f97316;
+    padding: 32px;
+    border-radius: 18px;
+    border: 1px solid rgba(56,189,248,0.15);
 }
 
 /* BUTTONS */
 .btn {
     background: #38bdf8;
-    padding: 10px 15px;
-    border-radius: 8px;
+    padding: 10px 16px;
+    border-radius: 10px;
     color: black;
     text-decoration: none;
     display: inline-block;
@@ -96,7 +125,21 @@ body {
     border-radius: 999px;
 }
 
-/* REVEAL APPLE STYLE */
+/* CV GRID */
+.cv-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+}
+
+.cv-preview img {
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* REVEAL */
 .reveal {
     opacity: 0;
     transform: translateY(40px);
