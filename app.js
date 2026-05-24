@@ -1,9 +1,7 @@
-// THEME
 function toggleTheme() {
     document.body.classList.toggle("light");
 }
 
-// LANG
 let lang = "en";
 
 const t = {
@@ -17,12 +15,13 @@ const t = {
 
 function toggleLang() {
     lang = lang === "en" ? "es" : "en";
+
     document.querySelectorAll("[data-i18n]").forEach(el => {
         el.innerText = t[lang][el.getAttribute("data-i18n")];
     });
 }
 
-// REVEAL
+/* SCROLL REVEAL REAL */
 const obs = new IntersectionObserver(entries => {
     entries.forEach(e => {
         if (e.isIntersecting) e.target.classList.add("active");
@@ -30,19 +29,3 @@ const obs = new IntersectionObserver(entries => {
 });
 
 document.querySelectorAll(".reveal").forEach(e => obs.observe(e));
-
-// SKILLS CHART
-new Chart(document.getElementById("skillsChart"), {
-    type: "radar",
-    data: {
-        labels: ["IAM","Security","Cloud","Dev","OS","Graphs"],
-        datasets: [{
-            data: [90,85,80,70,75,65]
-        }]
-    }
-});
-
-// TERMINAL
-function runTerminal() {
-    alert("Scanning IAM environment... OK");
-}
