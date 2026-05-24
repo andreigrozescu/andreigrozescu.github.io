@@ -2,43 +2,39 @@ const obs = new IntersectionObserver(entries => {
     entries.forEach(e => {
         if (e.isIntersecting) e.target.classList.add("active");
     });
-});
+}, { threshold: 0.15 });
 
 document.querySelectorAll(".reveal").forEach(e => obs.observe(e));
 
-/* SKILLS SYSTEM */
-const skills = document.querySelectorAll(".skill");
-const box = document.getElementById("skillBox");
+/* BACKGROUND NETWORK */
+const canvas = document.getElementById("net");
+const ctx = canvas.getContext("2d");
 
-const data = {
-    iam: "Identity lifecycle management, authentication systems and enterprise IAM governance.",
-    okta: "Okta identity platform used for authentication, SSO and access management.",
-    cyber: "Cybersecurity principles, risk management and secure system design.",
-    docker: "Containerization technology used in modern cloud infrastructure.",
-    linux: "Operating system widely used in servers and security environments.",
-    sparql: "Query language for RDF and Knowledge Graph data.",
-    kg: "Knowledge Graph modeling for semantic data representation."
-};
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
 
-skills.forEach(s => {
-    s.addEventListener("click", () => {
+let dots = Array.from({length: 70}, () => ({
+    x: Math.random() * canvas.width,
+    y: Math.random() * canvas.height,
+    vx: (Math.random() - 0.5) * 0.8,
+    vy: (Math.random() - 0.5) * 0.8
+}));
 
-        skills.forEach(x => x.classList.remove("active"));
-        s.classList.add("active");
+function animate() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-        box.innerText = data[s.dataset.skill];
+    dots.forEach(d => {
+        d.x += d.vx;
+        d.y += d.vy;
+
+        if (d.x < 0 || d.x > canvas.width) d.vx *= -1;
+        if (d.y < 0 || d.y > canvas.height) d.vy *= -1;
+
+        ctx.fillStyle = "#38bdf8";
+        ctx.fillRect(d.x, d.y, 2, 2);
     });
-});
 
-/* CV IMAGE EFFECT */
-const cv = document.getElementById("cvPhoto");
+    requestAnimationFrame(animate);
+}
 
-window.addEventListener("scroll", () => {
-    const r = cv.getBoundingClientRect();
-
-    if (r.top < window.innerHeight && r.bottom > 0) {
-        cv.classList.add("rotate");
-    } else {
-        cv.classList.remove("rotate");
-    }
-});
+animate();
