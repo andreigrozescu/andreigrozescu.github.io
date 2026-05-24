@@ -1,9 +1,7 @@
-// THEME TOGGLE
 function toggleTheme() {
     document.body.classList.toggle("light");
 }
 
-// LANGUAGE TOGGLE
 let lang = "en";
 
 const translations = {
@@ -29,3 +27,14 @@ function toggleLang() {
         el.innerText = translations[lang][key];
     });
 }
+
+/* SCROLL REVEAL REAL */
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("active");
+        }
+    });
+});
+
+document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
