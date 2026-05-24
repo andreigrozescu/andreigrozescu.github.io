@@ -1,6 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Andrei Grozescu | Cybersecurity Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+<script defer src="app.js"></script>
+</head>
+
+<body>
+
+<canvas id="net"></canvas>
+
 <!-- HERO -->
 <section class="scene hero">
-    <div class="blob blob-blue"></div>
     <div class="container reveal">
         <h1 class="title">Andrei Grozescu</h1>
         <h2 class="subtitle">Cybersecurity & IAM Engineer</h2>
@@ -16,55 +30,132 @@
     </div>
 </section>
 
-<div class="divider"></div>
-
 <!-- ABOUT -->
 <section class="scene">
-    <div class="blob blob-orange"></div>
     <div class="container reveal">
         <h2>About</h2>
+
         <div class="card">
-            <!-- TU TEXTO COMPLETO IGUAL -->
-            <p>Computer Engineering graduate...</p>
+            <p>
+                Computer Engineering graduate and currently working at Accenture, specialized in Identity and Access Management (IAM) within the cybersecurity domain. My work focuses on ensuring secure and efficient access to digital resources by managing identities, authentication processes, and access control policies.
+            </p>
+
+            <p>
+                I am particularly interested in building systems that enhance security, visibility, and control in complex infrastructures. My academic background includes the development of my Final Degree Project, focused on a knowledge graph–based solution for container monitoring and security analysis, aimed at improving traceability and vulnerability detection in dynamic environments.
+            </p>
+
+            <p>
+                I am especially motivated by the development of scalable technologies and continuously invest in my professional growth through certifications in AWS and Agile methodologies. I thrive on analyzing complex problems, learning quickly, and adapting to new challenges.
+            </p>
+
+            <p>
+                My goal is to keep growing as a software engineer, contributing to innovative teams that aim to create reliable, scalable systems and deliver meaningful impact through technology.
+            </p>
         </div>
     </div>
 </section>
-
-<div class="divider"></div>
 
 <!-- EXPERIENCE -->
 <section class="scene">
-    <div class="blob blob-blue"></div>
     <div class="container reveal">
         <h2>Experience</h2>
+
         <div class="card highlight">
-            <!-- TODO IGUAL -->
+            <h3>Accenture — IAM Engineer</h3>
+
+            <p>
+                Working on enterprise Identity & Access Management solutions, supporting authentication,
+                identity lifecycle management and access governance.
+            </p>
+
+            <ul>
+                <li>Identity lifecycle management (joiners, movers, leavers)</li>
+                <li>Access control policies (least privilege)</li>
+                <li>IAM platform operations (Okta)</li>
+                <li>Security compliance support</li>
+            </ul>
+
+            <div class="tags">
+                <span>IAM</span>
+                <span>Okta</span>
+                <span>Cybersecurity</span>
+            </div>
         </div>
     </div>
 </section>
-
-<div class="divider"></div>
 
 <!-- SKILLS -->
 <section class="scene">
-    <div class="blob blob-orange"></div>
     <div class="container reveal">
         <h2>Skills</h2>
+
         <div class="skills">
-            <!-- igual -->
+            <span>IAM</span>
+            <span>Okta</span>
+            <span>Cybersecurity</span>
+            <span>AWS</span>
+            <span>Docker</span>
+            <span>Linux</span>
+            <span>SPARQL</span>
+            <span>Knowledge Graphs</span>
         </div>
     </div>
 </section>
-
-<div class="divider"></div>
 
 <!-- THESIS -->
-<section class="scene">
-    <div class="blob blob-blue"></div>
+<section class="scene thesis">
     <div class="container reveal">
+
         <h2>Final Degree Project</h2>
-        <div class="card highlight">
-            <!-- igual -->
+
+        <div class="card">
+
+            <h3>Knowledge Graph-Based Container Security Monitoring</h3>
+
+            <p>
+                The widespread adoption of container technology such as Docker has transformed software deployment,
+                but it has introduced significant challenges in terms of visibility and security. Managing containers
+                poses critical issues for monitoring, traceability, and vulnerability control.
+            </p>
+
+            <p>
+                Current auditing tools typically focus on analyzing images statically and in isolation, without considering
+                execution context or relationships between infrastructure components.
+            </p>
+
+            <p>
+                This project extends a container auditing tool by integrating dynamic monitoring and semantic Knowledge Graphs.
+                It generates structured representations of containers, images, layers and dependencies.
+            </p>
+
+            <p>
+                The system enables SPARQL-based analysis for vulnerability detection, dependency tracking and forensic analysis
+                in complex infrastructures.
+            </p>
+
+            <a class="btn accent" href="https://oa.upm.es/94840/" target="_blank">
+                View Full Thesis
+            </a>
+
         </div>
     </div>
 </section>
+
+<!-- CONTACT -->
+<section class="scene">
+    <div class="container reveal">
+        <h2>Contact</h2>
+
+        <div class="card">
+            <p>Email: andrei.iulian951@gmail.com</p>
+
+            <div class="actions">
+                <a class="btn" href="https://github.com/andreigrozescu">GitHub</a>
+                <a class="btn" href="https://linkedin.com/in/andrei-iulian-717b89276/">LinkedIn</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
