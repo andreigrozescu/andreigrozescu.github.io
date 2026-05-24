@@ -1,7 +1,3 @@
-// LANGUAGE
-let lang = "en";
-
-// SCROLL REVEAL
 const obs = new IntersectionObserver(entries => {
     entries.forEach(e => {
         if (e.isIntersecting) e.target.classList.add("active");
@@ -10,28 +6,26 @@ const obs = new IntersectionObserver(entries => {
 
 document.querySelectorAll(".reveal").forEach(e => obs.observe(e));
 
-// THEME
 function toggleTheme() {
     document.body.classList.toggle("light");
 }
 
-// LANGUAGE
 function toggleLang() {
-    lang = lang === "en" ? "es" : "en";
+    console.log("toggle language");
 }
 
-/* NETWORK BACKGROUND */
+/* BACKGROUND NETWORK */
 const canvas = document.getElementById("net");
 const ctx = canvas.getContext("2d");
 
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-let dots = Array.from({length: 80}, () => ({
+let dots = Array.from({length: 60}, () => ({
     x: Math.random()*canvas.width,
     y: Math.random()*canvas.height,
-    vx: (Math.random()-0.5)*1,
-    vy: (Math.random()-0.5)*1
+    vx: (Math.random()-0.5),
+    vy: (Math.random()-0.5)
 }));
 
 function draw() {
