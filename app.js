@@ -11,7 +11,7 @@ function toggleTheme() {
 }
 
 function toggleLang() {
-    console.log("toggle language");
+    console.log("EN/ES toggle (optional upgrade)");
 }
 
 /* BACKGROUND NETWORK */
