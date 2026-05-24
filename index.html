@@ -37,6 +37,7 @@
 <!-- HERO -->
 <header class="hero reveal">
     <div class="container">
+
         <h1 class="glow">Andrei Grozescu</h1>
         <h2>Cybersecurity & IAM Engineer</h2>
 
@@ -48,6 +49,7 @@
             <a href="#experience" class="btn">View Experience</a>
             <a href="https://oa.upm.es/94840/" target="_blank" class="btn secondary">Read Thesis</a>
         </div>
+
     </div>
 </header>
 
@@ -55,9 +57,22 @@
 <section id="about" class="reveal">
     <div class="container">
         <h2>About</h2>
+
         <div class="card">
             <p>
-                Computer Engineering graduate specialized in cybersecurity and Identity & Access Management (IAM).
+                Computer Engineering graduate and currently working at Accenture, specialized in Identity and Access Management (IAM) within the cybersecurity domain. My work focuses on ensuring secure and efficient access to digital resources by managing identities, authentication processes, and access control policies.
+            </p>
+
+            <p>
+                I am particularly interested in building systems that enhance security, visibility, and control in complex infrastructures. My academic background includes the development of my Final Degree Project, focused on a knowledge graph–based solution for container monitoring and security analysis, aimed at improving traceability and vulnerability detection in dynamic environments.
+            </p>
+
+            <p>
+                I am especially motivated by the development of scalable technologies and continuously invest in my professional growth through certifications in AWS and Agile methodologies. I thrive on analyzing complex problems, learning quickly, and adapting to new challenges.
+            </p>
+
+            <p>
+                My goal is to keep growing as a software engineer, contributing to innovative teams that aim to create reliable, scalable systems and deliver meaningful impact through technology.
             </p>
         </div>
     </div>
@@ -72,8 +87,16 @@
             <h3>Accenture — IAM Engineer</h3>
 
             <p>
-                Identity lifecycle management, access governance and enterprise IAM operations.
+                Working on enterprise Identity & Access Management solutions, supporting authentication,
+                identity lifecycle management and access governance.
             </p>
+
+            <ul>
+                <li>Identity lifecycle management (joiners, movers, leavers)</li>
+                <li>Access control policies (least privilege)</li>
+                <li>IAM platform operations (Okta)</li>
+                <li>Security compliance support</li>
+            </ul>
 
             <div class="tags">
                 <span>IAM</span>
@@ -84,7 +107,7 @@
     </div>
 </section>
 
-<!-- SKILLS (FIXED COMPLETELY) -->
+<!-- SKILLS -->
 <section id="skills" class="reveal">
     <div class="container">
         <h2>Skills</h2>
@@ -105,15 +128,40 @@
 <!-- PROJECTS -->
 <section id="projects" class="reveal">
     <div class="container">
-        <h2>Projects</h2>
+        <h2>Final Degree Project</h2>
 
         <div class="card">
-            <h3>Knowledge Graph Security Monitoring</h3>
-            <p>Container security analysis using RDF graphs and SPARQL.</p>
+
+            <h3>Knowledge Graph-Based Container Security Monitoring</h3>
+
+            <p>
+                The widespread adoption of container technology such as Docker has transformed software deployment,
+                but it has introduced significant challenges in terms of visibility and security. Managing containers
+                poses critical issues for monitoring, traceability, and vulnerability control.
+            </p>
+
+            <p>
+                Current auditing tools typically focus on analyzing images statically and in isolation, without considering
+                the execution context or relationships between infrastructure components. This reduces operational visibility
+                and makes real-time vulnerability assessment difficult.
+            </p>
+
+            <p>
+                This Final Degree Project extends the C2T tool by incorporating dynamic monitoring and semantic Knowledge Graphs.
+                The system integrates data extraction, normalization, and unification from Docker containers, generating a graph
+                that represents images, layers, packages, and running containers.
+            </p>
+
+            <p>
+                The solution enables advanced SPARQL queries to identify vulnerabilities, analyze dependencies, audit configurations,
+                and trace the origin of failures. It was validated in a realistic environment and demonstrated scalability for
+                large infrastructures.
+            </p>
 
             <a class="btn" href="https://oa.upm.es/94840/" target="_blank">
-                View Thesis
+                View Full Thesis
             </a>
+
         </div>
     </div>
 </section>
@@ -132,7 +180,7 @@
     </div>
 </section>
 
-</div> <!-- page -->
+</div>
 
 </body>
 </html>
