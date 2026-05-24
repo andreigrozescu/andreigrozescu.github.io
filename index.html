@@ -7,11 +7,24 @@
 
 <link rel="stylesheet" href="style.css">
 <script defer src="app.js"></script>
+
+<!-- Apple-like font -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
 <canvas id="net"></canvas>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#thesis">Thesis</a>
+    <a href="#cv">CV</a>
+    <a href="#contact">Contact</a>
+</nav>
 
 <!-- HERO -->
 <section class="scene hero">
@@ -31,7 +44,7 @@
 </section>
 
 <!-- ABOUT -->
-<section class="scene">
+<section id="about" class="scene">
     <div class="container reveal">
         <h2>About</h2>
 
@@ -41,22 +54,18 @@
             </p>
 
             <p>
-                I am particularly interested in building systems that enhance security, visibility, and control in complex infrastructures. My academic background includes the development of my Final Degree Project, focused on a knowledge graph–based solution for container monitoring and security analysis, aimed at improving traceability and vulnerability detection in dynamic environments.
+                I am particularly interested in building systems that enhance security, visibility, and control in complex infrastructures.
             </p>
 
             <p>
-                I am especially motivated by the development of scalable technologies and continuously invest in my professional growth through certifications in AWS and Agile methodologies. I thrive on analyzing complex problems, learning quickly, and adapting to new challenges.
-            </p>
-
-            <p>
-                My goal is to keep growing as a software engineer, contributing to innovative teams that aim to create reliable, scalable systems and deliver meaningful impact through technology.
+                My goal is to keep growing as a software engineer, contributing to innovative teams in cybersecurity.
             </p>
         </div>
     </div>
 </section>
 
 <!-- EXPERIENCE -->
-<section class="scene">
+<section id="experience" class="scene">
     <div class="container reveal">
         <h2>Experience</h2>
 
@@ -64,13 +73,12 @@
             <h3>Accenture — IAM Engineer</h3>
 
             <p>
-                Working on enterprise Identity & Access Management solutions, supporting authentication,
-                identity lifecycle management and access governance.
+                Identity & Access Management operations in enterprise environments focused on security, authentication and governance.
             </p>
 
             <ul>
-                <li>Identity lifecycle management (joiners, movers, leavers)</li>
-                <li>Access control policies (least privilege)</li>
+                <li>Identity lifecycle management</li>
+                <li>Access governance & least privilege policies</li>
                 <li>IAM platform operations (Okta)</li>
                 <li>Security compliance support</li>
             </ul>
@@ -85,14 +93,13 @@
 </section>
 
 <!-- SKILLS -->
-<section class="scene">
+<section id="skills" class="scene">
     <div class="container reveal">
         <h2>Skills</h2>
 
         <div class="skills">
             <span>IAM</span>
             <span>Okta</span>
-            <span>Cybersecurity</span>
             <span>AWS</span>
             <span>Docker</span>
             <span>Linux</span>
@@ -103,7 +110,7 @@
 </section>
 
 <!-- THESIS -->
-<section class="scene thesis">
+<section id="thesis" class="scene">
     <div class="container reveal">
 
         <h2>Final Degree Project</h2>
@@ -113,36 +120,44 @@
             <h3>Knowledge Graph-Based Container Security Monitoring</h3>
 
             <p>
-                The widespread adoption of container technology such as Docker has transformed software deployment,
-                but it has introduced significant challenges in terms of visibility and security. Managing containers
-                poses critical issues for monitoring, traceability, and vulnerability control.
-            </p>
-
-            <p>
-                Current auditing tools typically focus on analyzing images statically and in isolation, without considering
-                execution context or relationships between infrastructure components.
-            </p>
-
-            <p>
-                This project extends a container auditing tool by integrating dynamic monitoring and semantic Knowledge Graphs.
-                It generates structured representations of containers, images, layers and dependencies.
-            </p>
-
-            <p>
-                The system enables SPARQL-based analysis for vulnerability detection, dependency tracking and forensic analysis
-                in complex infrastructures.
+                Container security challenges in modern infrastructure and semantic analysis using knowledge graphs.
             </p>
 
             <a class="btn accent" href="https://oa.upm.es/94840/" target="_blank">
-                View Full Thesis
+                View Thesis
             </a>
+        </div>
+    </div>
+</section>
+
+<!-- CV SECTION -->
+<section id="cv" class="scene">
+    <div class="container reveal">
+
+        <h2>Curriculum Vitae</h2>
+
+        <div class="cv-grid">
+
+            <div class="card">
+                <p>
+                    Download my full CV in PDF format.
+                </p>
+
+                <a class="btn" href="cv.pdf" target="_blank">Download CV</a>
+            </div>
+
+            <!-- IMAGE PLACEHOLDER (optional screenshot style) -->
+            <div class="cv-preview">
+                <!-- sube imagen como cv.png si quieres -->
+                <img src="cv.png" alt="CV preview">
+            </div>
 
         </div>
     </div>
 </section>
 
 <!-- CONTACT -->
-<section class="scene">
+<section id="contact" class="scene">
     <div class="container reveal">
         <h2>Contact</h2>
 
