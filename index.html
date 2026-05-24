@@ -113,19 +113,32 @@
 <section id="thesis" class="scene">
     <div class="container reveal">
 
-        <h2>Final Degree Project</h2>
+        <h2>Bachelor’s Thesis</h2>
 
         <div class="card">
 
             <h3>Knowledge Graph-Based Container Security Monitoring</h3>
 
             <p>
-                Container security challenges in modern infrastructure and semantic analysis using knowledge graphs.
+                The widespread adoption of container technologies such as Docker has transformed modern software deployment, but it has also introduced significant challenges in terms of visibility, security, and operational traceability across distributed infrastructures.
+            </p>
+
+            <p>
+                This thesis addresses the limitations of traditional auditing tools, which typically rely on static and isolated image analysis, by proposing an extended system that integrates dynamic monitoring with semantic Knowledge Graphs to improve infrastructure understanding.
+            </p>
+
+            <p>
+                The proposed solution, implemented as an extension of the C2T tool, enables unified representation of containers, images, layers, packages, and runtime environments. This allows advanced SPARQL-based analysis for vulnerability detection, dependency tracking, and forensic investigation of security issues across the full container lifecycle.
+            </p>
+
+            <p>
+                The system was validated in a realistic heterogeneous environment, demonstrating its ability to correlate vulnerabilities with deployed assets and trace the origin of configuration and build-time issues. Scalability tests confirmed its suitability for large-scale infrastructures with thousands of containers and millions of RDF triples.
             </p>
 
             <a class="btn accent" href="https://oa.upm.es/94840/" target="_blank">
                 View Thesis
             </a>
+
         </div>
     </div>
 </section>
