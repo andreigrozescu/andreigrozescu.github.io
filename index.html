@@ -1,214 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrei Grozescu | Cybersecurity & IAM Engineer</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Andrei Grozescu | Cybersecurity Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+<script defer src="app.js"></script>
 </head>
 
 <body>
 
-<!-- NAV -->
 <nav>
-    <div class="logo">AG</div>
+    <div class="logo">SOC // AG</div>
 
-    <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
+    <div class="nav-controls">
+        <button onclick="toggleTheme()" class="small-btn">Theme</button>
+        <button onclick="toggleLang()" class="small-btn">EN/ES</button>
+        <a href="cv.pdf" class="small-btn" download>CV</a>
+    </div>
 </nav>
 
-<!-- HERO -->
-<header class="hero">
+<header class="hero reveal">
     <div class="hero-content">
 
-        <p class="subtitle">Cybersecurity • IAM • Cloud Security • Identity Governance</p>
+        <h1 data-i18n="name">Andrei Grozescu</h1>
+        <h2 data-i18n="role">Cybersecurity & IAM Engineer</h2>
 
-        <h1>Andrei Grozescu</h1>
-
-        <h2>Cybersecurity & Identity Access Management Engineer</h2>
-
-        <p class="description">
-            Computer Engineering graduate working at Accenture in Identity & Access Management (IAM),
-            focused on secure identity systems, authentication architecture, and enterprise security operations.
+        <p data-i18n="hero_desc">
+            IAM engineer at Accenture focused on identity security, authentication systems and cloud access governance.
         </p>
 
-        <div class="hero-buttons">
-            <a href="#projects" class="button">View Projects</a>
-            <a href="https://oa.upm.es/94840/" target="_blank" class="button secondary">Read My Thesis</a>
+        <div class="hero-actions">
+            <a href="#experience" class="btn">View Experience</a>
+            <a href="https://oa.upm.es/94840/" target="_blank" class="btn secondary">Read Thesis</a>
         </div>
 
     </div>
 </header>
 
-<!-- ABOUT -->
-<section id="about">
-    <h2>About Me</h2>
+<section id="about" class="reveal">
+    <h2>About</h2>
 
     <div class="card">
-        <p>
-            I am a Computer Engineering graduate specialized in cybersecurity and Identity & Access Management (IAM).
+        <p data-i18n="about">
+            Computer Engineering graduate specialized in cybersecurity and IAM.
         </p>
 
         <p>
-            My focus is on designing and supporting secure identity systems that ensure controlled access
-            to enterprise resources while maintaining scalability and compliance.
-        </p>
-
-        <p>
-            I am particularly interested in cloud security, identity governance, and infrastructure visibility in complex environments.
+            Focused on identity security, cloud access control and scalable enterprise architectures.
         </p>
     </div>
 </section>
 
-<!-- EXPERIENCE -->
-<section id="experience">
-    <h2>Professional Experience</h2>
+<section id="experience" class="reveal">
+    <h2>Experience</h2>
 
     <div class="card">
         <h3>Accenture — IAM Engineer</h3>
 
         <p>
-            Working on enterprise Identity & Access Management solutions, supporting authentication systems,
-            identity lifecycle processes, and access governance policies.
+            Working on enterprise Identity & Access Management systems, focusing on authentication, access governance and identity lifecycle management.
         </p>
 
         <ul>
-            <li>Identity lifecycle management (joiners, movers, leavers)</li>
-            <li>Access control & least privilege enforcement</li>
+            <li>Identity lifecycle management</li>
+            <li>Access control policies (least privilege)</li>
             <li>IAM platform operations (Okta)</li>
-            <li>Security compliance & audit support</li>
+            <li>Security compliance support</li>
         </ul>
 
         <div class="tags">
             <span>IAM</span>
             <span>Okta</span>
             <span>Cybersecurity</span>
-            <span>Zero Trust</span>
         </div>
     </div>
 </section>
 
-<!-- SKILLS -->
-<section id="skills">
-    <h2>Technical Skills</h2>
+<section id="skills" class="reveal">
+    <h2>Skills</h2>
 
     <div class="skills-grid">
         <span>Cybersecurity</span>
-        <span>Identity & Access Management</span>
+        <span>IAM</span>
         <span>Okta</span>
         <span>AWS</span>
         <span>Docker</span>
         <span>Linux</span>
         <span>Python</span>
-        <span>Git</span>
         <span>SPARQL</span>
-        <span>RDF / Knowledge Graphs</span>
-        <span>Security Monitoring</span>
+        <span>Knowledge Graphs</span>
     </div>
 </section>
 
-<!-- PROJECTS -->
-<section id="projects">
-    <h2>Featured Project</h2>
+<section id="projects" class="reveal">
+    <h2>Projects</h2>
 
-    <div class="card highlight-card">
+    <div class="card project-card">
 
-        <div class="project-header">
-            <h3>Knowledge Graph-Based Container Security Monitoring</h3>
-            <span class="badge">Final Degree Thesis</span>
-        </div>
+        <h3>Knowledge Graph-Based Container Security Monitoring</h3>
 
         <p>
-            This project enhances security visibility in containerized environments using semantic knowledge graphs.
+            Final Degree Project focused on improving security visibility in containerized environments using semantic knowledge graphs.
         </p>
 
         <p>
-            It integrates static and dynamic container analysis to build a unified model of infrastructure,
-            enabling advanced security operations and vulnerability traceability.
+            Enables vulnerability detection, dependency tracing and infrastructure-level security auditing.
         </p>
 
         <div class="tags">
             <span>Docker</span>
             <span>Knowledge Graphs</span>
             <span>SPARQL</span>
-            <span>Security Engineering</span>
+            <span>Security Analysis</span>
         </div>
 
-        <a href="https://oa.upm.es/94840/" target="_blank" class="button project-button">
-            🔗 View Full Thesis (UPM Repository)
-        </a>
+        <div class="project-actions">
+            <a class="btn" href="https://oa.upm.es/94840/" target="_blank">
+                View Thesis
+            </a>
+        </div>
 
     </div>
 </section>
 
-<!-- EDUCATION -->
-<section id="education">
-    <h2>Education</h2>
-
-    <div class="card uni-card">
-
-        <div class="uni-title">
-            <div class="uni-logo">UPM</div>
-            <div>
-                <h3>Universidad Politécnica de Madrid</h3>
-                <p>BSc Computer Engineering</p>
-            </div>
-        </div>
-
-        <p>
-            Strong foundation in software engineering, distributed systems, databases,
-            cybersecurity principles, and data structures.
-        </p>
-
-    </div>
-</section>
-
-<!-- BLOG -->
-<section id="blog">
-    <h2>Technical Blog</h2>
+<section id="blog" class="reveal">
+    <h2>Blog</h2>
 
     <div class="card">
-
         <h3>Identity & Access Management in Modern Enterprises</h3>
-
         <p>
-            IAM systems are a core pillar of modern cybersecurity strategies,
-            ensuring secure authentication, authorization, and identity governance.
+            IAM is a core pillar of cybersecurity ensuring secure authentication, authorization and identity governance.
         </p>
-
-        <p>
-            With the rise of cloud infrastructure, IAM has become critical for enforcing Zero Trust architectures
-            and protecting enterprise systems.
-        </p>
-
     </div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact">
+<section id="contact" class="reveal">
     <h2>Contact</h2>
 
     <div class="card contact-card">
 
-        <p><strong>Email:</strong> andrei.iulian951@gmail.com</p>
+        <p>Email: andrei.iulian951@gmail.com</p>
 
         <div class="buttons">
-
-            <a class="btn" href="https://github.com/andreigrozescu" target="_blank">
-                GitHub
-            </a>
-
-            <a class="btn" href="https://linkedin.com/in/andrei-iulian-717b89276/" target="_blank">
-                LinkedIn
-            </a>
-
+            <a class="btn" href="https://github.com/andreigrozescu">GitHub</a>
+            <a class="btn" href="https://linkedin.com/in/andrei-iulian-717b89276/">LinkedIn</a>
         </div>
 
     </div>
