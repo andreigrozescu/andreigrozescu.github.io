@@ -7,15 +7,9 @@
 
 <link rel="stylesheet" href="style.css">
 <script defer src="app.js"></script>
-
-<!-- Chart.js -->
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
-
-<!-- BACKGROUND CANVAS -->
-<canvas id="net"></canvas>
 
 <!-- NAV -->
 <nav>
@@ -39,120 +33,117 @@
 
 <!-- HERO -->
 <header class="hero reveal">
-    <h1>Andrei Grozescu</h1>
-    <h2>Cybersecurity & IAM Engineer</h2>
+    <div class="container">
 
-    <p data-i18n="hero_desc">
-        IAM engineer at Accenture focused on identity security and cloud access governance.
-    </p>
+        <h1>Andrei Grozescu</h1>
+        <h2>Cybersecurity & IAM Engineer</h2>
 
-    <div class="hero-actions">
-        <a href="#experience" class="btn">View Experience</a>
-        <a href="https://oa.upm.es/94840/" target="_blank" class="btn secondary">Read Thesis</a>
+        <p>
+            IAM engineer at Accenture focused on identity security, authentication systems and cloud access governance.
+        </p>
+
+        <div class="hero-actions">
+            <a href="#experience" class="btn">View Experience</a>
+            <a href="https://oa.upm.es/94840/" target="_blank" class="btn secondary">Read Thesis</a>
+        </div>
+
     </div>
 </header>
 
 <!-- ABOUT -->
 <section id="about" class="reveal">
-    <h2>About</h2>
-    <div class="card">
-        <p data-i18n="about"></p>
+    <div class="container">
+        <h2>About</h2>
+
+        <div class="card">
+            <p>
+                Computer Engineering graduate specialized in cybersecurity and IAM.
+            </p>
+        </div>
     </div>
 </section>
 
-<!-- EXPERIENCE TIMELINE -->
+<!-- EXPERIENCE -->
 <section id="experience" class="reveal">
-    <h2>Experience</h2>
-
-    <div class="timeline">
-
-        <div class="item">
-            <h3>Accenture</h3>
-            <p>IAM Engineer</p>
-            <span>Identity lifecycle, Okta, access governance</span>
-        </div>
-
-    </div>
-</section>
-
-<!-- SKILLS DASHBOARD -->
-<section id="skills" class="reveal">
-    <h2>Skills Intelligence</h2>
-
-    <div class="grid">
+    <div class="container">
+        <h2>Experience</h2>
 
         <div class="card">
-            <canvas id="skillsChart"></canvas>
-        </div>
+            <h3>Accenture — IAM Engineer</h3>
 
-        <div class="card">
-            <h3>Tech Stack</h3>
+            <p>
+                Identity lifecycle management, access governance and enterprise IAM operations.
+            </p>
 
             <div class="tags">
                 <span>IAM</span>
                 <span>Okta</span>
                 <span>Cybersecurity</span>
-                <span>AWS</span>
-                <span>Docker</span>
-                <span>Linux</span>
-                <span>SPARQL</span>
-                <span>Knowledge Graphs</span>
             </div>
         </div>
+    </div>
+</section>
 
+<!-- SKILLS (SIMPLIFICADO, SIN GRÁFICO) -->
+<section id="skills" class="reveal">
+    <div class="container">
+        <h2>Skills</h2>
+
+        <div class="skills-grid">
+            <span>IAM</span>
+            <span>Okta</span>
+            <span>Cybersecurity</span>
+            <span>AWS</span>
+            <span>Docker</span>
+            <span>Linux</span>
+            <span>SPARQL</span>
+            <span>Knowledge Graphs</span>
+        </div>
     </div>
 </section>
 
 <!-- PROJECTS -->
 <section id="projects" class="reveal">
-    <h2>Projects</h2>
+    <div class="container">
+        <h2>Projects</h2>
 
-    <div class="card">
-        <h3>Knowledge Graph Security Monitoring</h3>
+        <div class="card">
+            <h3>Knowledge Graph Security Monitoring</h3>
 
-        <p>
-            Container security analysis using RDF graphs and SPARQL querying.
-        </p>
+            <p>
+                Container security analysis using RDF graphs and SPARQL.
+            </p>
 
-        <a class="btn" href="https://oa.upm.es/94840/" target="_blank">
-            View Thesis
-        </a>
+            <a class="btn" href="https://oa.upm.es/94840/" target="_blank">
+                View Thesis
+            </a>
+        </div>
     </div>
 </section>
 
 <!-- BLOG -->
 <section id="blog" class="reveal">
-    <h2>Blog</h2>
+    <div class="container">
+        <h2>Blog</h2>
 
-    <div class="card">
-        <h3>IAM in Cloud Security</h3>
-        <p>Identity is the new perimeter in distributed systems.</p>
-    </div>
-
-    <div class="card">
-        <h3>Zero Trust Architecture</h3>
-        <p>Never trust, always verify.</p>
-    </div>
-</section>
-
-<!-- TERMINAL -->
-<section class="reveal">
-    <h2>Terminal</h2>
-
-    <div class="terminal" onclick="runTerminal()">
-        <p>> click to run scan...</p>
+        <div class="card">
+            <h3>IAM in Cloud Security</h3>
+            <p>Identity is the new perimeter in distributed systems.</p>
+        </div>
     </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact" class="reveal">
-    <h2>Contact</h2>
+    <div class="container">
+        <h2>Contact</h2>
 
-    <div class="card">
-        <p>Email: andrei.iulian951@gmail.com</p>
+        <div class="card">
+            <p>Email: andrei.iulian951@gmail.com</p>
 
-        <a class="btn" href="https://github.com/andreigrozescu">GitHub</a>
-        <a class="btn" href="https://linkedin.com/in/andrei-iulian-717b89276/">LinkedIn</a>
+            <a class="btn" href="https://github.com/andreigrozescu">GitHub</a>
+            <a class="btn" href="https://linkedin.com/in/andrei-iulian-717b89276/">LinkedIn</a>
+        </div>
     </div>
 </section>
 
