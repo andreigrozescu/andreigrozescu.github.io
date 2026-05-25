@@ -348,8 +348,8 @@ h3 {
 /* CV SECTION */
 .cv-grid {
     display: grid;
-    grid-template-columns: 280px 1fr;
-    gap: 40px;
+    grid-template-columns: 380px 1fr;
+    gap: 50px;
     align-items: center;
 }
 
@@ -378,7 +378,18 @@ h3 {
 }
 
 .cv-content.card {
-    padding: 32px;
+    padding: 20px;
+}
+
+.cv-content h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.cv-content p {
+    font-size: 14px;
+    margin-bottom: 10px;
 }
 
 .cv-buttons {
@@ -619,11 +630,11 @@ h3 {
 
 /* CONTACT SECTION */
 .contact-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 50px;
     align-items: center;
-    justify-content: center;
+    justify-items: center;
 }
 
 .contact-image {
@@ -637,8 +648,8 @@ h3 {
 }
 
 .contact-photo img {
-    width: 240px;
-    height: 240px;
+    width: 320px;
+    height: 320px;
     border-radius: 16px;
     border: 2px solid #38bdf8;
     box-shadow: 0 8px 32px rgba(56, 189, 248, 0.2);
@@ -649,11 +660,17 @@ h3 {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 500px;
+    max-width: 380px;
 }
 
 .contact-content.card {
-    padding: 24px;
+    padding: 20px;
+}
+
+.contact-content h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 0;
 }
 
 .contact-content p {
