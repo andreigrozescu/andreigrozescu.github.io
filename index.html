@@ -20,6 +20,7 @@
 <nav class="navbar">
     <a href="#about">About</a>
     <a href="#experience">Experience</a>
+    <a href="#cover-letter">Letter</a>
     <a href="#skills">Skills</a>
     <a href="#thesis">Thesis</a>
     <a href="#cv">CV</a>
@@ -38,7 +39,7 @@
 
         <div class="actions">
             <a href="#about" class="btn">Explore Profile</a>
-            <a href="https://oa.upm.es/94840/" target="_blank" class="btn secondary">Read Thesis</a>
+            <a href="https://oa.upm.es/94840/" target="_blank" class="btn secondary">View Thesis</a>
         </div>
     </div>
 </section>
@@ -97,14 +98,39 @@
     <div class="container reveal">
         <h2>Skills</h2>
 
-        <div class="skills">
-            <span>IAM</span>
-            <span>Okta</span>
-            <span>AWS</span>
-            <span>Docker</span>
-            <span>Linux</span>
-            <span>SPARQL</span>
-            <span>Knowledge Graphs</span>
+        <div class="skills-container">
+            <div class="skill-item" data-skill="IAM">
+                <span class="skill-badge">IAM</span>
+                <div class="skill-description">Identity & Access Management platforms and lifecycle management</div>
+            </div>
+            <div class="skill-item" data-skill="Okta">
+                <span class="skill-badge">Okta</span>
+                <div class="skill-description">Enterprise identity platform for authentication and governance</div>
+            </div>
+            <div class="skill-item" data-skill="Docker">
+                <span class="skill-badge">Docker</span>
+                <div class="skill-description">Container technology, image analysis and security monitoring</div>
+            </div>
+            <div class="skill-item" data-skill="Linux">
+                <span class="skill-badge">Linux</span>
+                <div class="skill-description">System administration and infrastructure management</div>
+            </div>
+            <div class="skill-item" data-skill="SPARQL">
+                <span class="skill-badge">SPARQL</span>
+                <div class="skill-description">Graph query language for semantic data analysis</div>
+            </div>
+            <div class="skill-item" data-skill="Knowledge Graphs">
+                <span class="skill-badge">Knowledge Graphs</span>
+                <div class="skill-description">Semantic modeling and relationship mapping for complex systems</div>
+            </div>
+            <div class="skill-item" data-skill="Cybersecurity">
+                <span class="skill-badge">Cybersecurity</span>
+                <div class="skill-description">Vulnerability analysis, threat detection and risk mitigation</div>
+            </div>
+            <div class="skill-item" data-skill="Python">
+                <span class="skill-badge">Python</span>
+                <div class="skill-description">Scripting, automation and system development</div>
+            </div>
         </div>
     </div>
 </section>
@@ -112,20 +138,29 @@
 <!-- THESIS -->
 <section id="thesis" class="scene">
     <div class="container reveal">
+        <h2>Bachelor's Thesis</h2>
 
-        <h2>Final Degree Project</h2>
+        <div class="thesis-grid">
+            <div class="thesis-image parallax-image" style="background-image: url('tfg-photo.jpg')"></div>
+            <div class="thesis-content card">
+                <h3>Knowledge Graph-Based Container Security Monitoring</h3>
+                
+                <p>
+                    Container technology has transformed software deployment but introduced significant security challenges in monitoring, traceability, and vulnerability control. Current auditing tools lack visibility into the execution context and infrastructure relationships.
+                </p>
 
-        <div class="card">
+                <p>
+                    This thesis develops an extension of the C2T tool for Docker container auditing and security analysis. The solution combines dynamic monitoring with semantic knowledge graphs to provide comprehensive infrastructure visibility, enabling identification of vulnerabilities, dependency evaluation, and failure traceability.
+                </p>
 
-            <h3>Knowledge Graph-Based Container Security Monitoring</h3>
+                <p>
+                    Implemented in Python with a modular architecture, the system integrates data extraction from containers and generates SPARQL-queryable graphs correlating images, layers, packages, and running containers. Validation in a production-like environment with thousands of containers demonstrated both accuracy and scalability.
+                </p>
 
-            <p>
-                Container security challenges in modern infrastructure and semantic analysis using knowledge graphs.
-            </p>
-
-            <a class="btn accent" href="https://oa.upm.es/94840/" target="_blank">
-                View Thesis
-            </a>
+                <a class="btn accent" href="https://oa.upm.es/94840/" target="_blank">
+                    Read Full Thesis
+                </a>
+            </div>
         </div>
     </div>
 </section>
@@ -133,25 +168,59 @@
 <!-- CV SECTION -->
 <section id="cv" class="scene">
     <div class="container reveal">
-
         <h2>Curriculum Vitae</h2>
 
         <div class="cv-grid">
+            <div class="cv-preview parallax-image" style="background-image: url('cv-photo.jpg')"></div>
+            
+            <div class="cv-content card">
+                <h3>Full Professional CV</h3>
+                <p>Download my complete curriculum vitae in your preferred language.</p>
+                
+                <div class="cv-buttons">
+                    <a class="btn" href="cv-eng.pdf" download>
+                        📄 CV English
+                    </a>
+                    <a class="btn accent" href="cv-es.pdf" download>
+                        📄 CV Español
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-            <div class="card">
+<!-- COVER LETTER -->
+<section id="cover-letter" class="scene">
+    <div class="container reveal">
+        <h2>Cover Letter</h2>
+
+        <div class="cover-letter-grid">
+            <div class="cover-letter-content card">
+                <p class="letter-greeting">Dear Hiring Manager,</p>
+
                 <p>
-                    Download my full CV in PDF format.
+                    I am writing to express my interest in Cybersecurity positions. I am a Computer Engineering graduate from the Universidad Politécnica de Madrid and currently working at Accenture as an Identity and Access Management (IAM) Security Transformation Analyst within the cybersecurity domain.
                 </p>
 
-                <a class="btn" href="cv.pdf" target="_blank">Download CV</a>
-            </div>
+                <p>
+                    In my current role, I work on enterprise IAM environments, focusing on identity lifecycle management, authentication systems, access governance, and security compliance. I have hands-on experience with IAM platforms such as Okta, supporting secure access control and least-privilege policies in complex enterprise infrastructures.
+                </p>
 
-            <!-- IMAGE PLACEHOLDER (optional screenshot style) -->
-            <div class="cv-preview">
-                <!-- sube imagen como cv.png si quieres -->
-                <img src="cv.png" alt="CV preview">
-            </div>
+                <p>
+                    My academic background complements this experience. During my Bachelor's Thesis, I developed a knowledge graph–based solution for container monitoring and security analysis using Docker, SPARQL, and semantic technologies. This project focused on improving infrastructure visibility, vulnerability traceability, and dependency analysis in dynamic environments.
+                </p>
 
+                <p>
+                    I am particularly motivated by cybersecurity operations, threat detection, and the continuous improvement of secure and scalable systems. I would welcome the opportunity to contribute my experience in IAM and academic background in cybersecurity to a security-focused team.
+                </p>
+
+                <p class="letter-closing">
+                    Thank you for your time and consideration.<br>
+                    <strong>Sincerely,</strong><br>
+                    Andrei Grozescu
+                </p>
+            </div>
         </div>
     </div>
 </section>
@@ -161,12 +230,16 @@
     <div class="container reveal">
         <h2>Contact</h2>
 
-        <div class="card">
-            <p>Email: andrei.iulian951@gmail.com</p>
+        <div class="contact-grid">
+            <div class="contact-image parallax-image" style="background-image: url('linkedin-photo.jpg')"></div>
+            
+            <div class="contact-content card">
+                <p><strong>Email:</strong> andrei.iulian951@gmail.com</p>
 
-            <div class="actions">
-                <a class="btn" href="https://github.com/andreigrozescu">GitHub</a>
-                <a class="btn" href="https://linkedin.com/in/andrei-iulian-717b89276/">LinkedIn</a>
+                <div class="actions">
+                    <a class="btn" href="https://github.com/andreigrozescu" target="_blank">GitHub</a>
+                    <a class="btn accent" href="https://linkedin.com/in/andrei-iulian-717b89276/" target="_blank">LinkedIn</a>
+                </div>
             </div>
         </div>
     </div>
