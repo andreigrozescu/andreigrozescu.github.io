@@ -6,6 +6,35 @@ const obs = new IntersectionObserver(entries => {
 
 document.querySelectorAll(".reveal").forEach(e => obs.observe(e));
 
+/* SKILLS INTERACTIVITY */
+document.querySelectorAll(".skill-item").forEach(item => {
+    item.addEventListener("click", function() {
+        this.classList.toggle("active");
+    });
+    
+    item.addEventListener("mouseenter", function() {
+        this.classList.add("active");
+    });
+    
+    item.addEventListener("mouseleave", function() {
+        this.classList.remove("active");
+    });
+});
+
+/* PARALLAX EFFECT FOR IMAGES */
+const parallaxImages = document.querySelectorAll('.parallax-image');
+
+window.addEventListener('scroll', () => {
+    parallaxImages.forEach(img => {
+        const scrollPosition = window.pageYOffset;
+        const elementOffset = img.parentElement.offsetTop;
+        const distance = scrollPosition - elementOffset;
+        const yPos = distance * 0.5;
+        
+        img.style.backgroundPosition = `center ${yPos}px`;
+    });
+});
+
 /* BACKGROUND NETWORK */
 const canvas = document.getElementById("net");
 const ctx = canvas.getContext("2d");
@@ -38,3 +67,9 @@ function animate() {
 }
 
 animate();
+
+/* HANDLE CANVAS RESIZE */
+window.addEventListener('resize', () => {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+});
