@@ -347,22 +347,34 @@ h3 {
 
 /* CV SECTION */
 .cv-grid {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 280px 1fr;
     gap: 40px;
     align-items: center;
-    justify-content: center;
 }
 
 .cv-preview {
     display: none;
 }
 
+.cv-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cv-photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    border: 2px solid #38bdf8;
+    box-shadow: 0 8px 32px rgba(56, 189, 248, 0.2);
+}
+
 .cv-content {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 750px;
 }
 
 .cv-content.card {
@@ -616,6 +628,21 @@ h3 {
 
 .contact-image {
     display: none;
+}
+
+.contact-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-photo img {
+    width: 240px;
+    height: 240px;
+    border-radius: 16px;
+    border: 2px solid #38bdf8;
+    box-shadow: 0 8px 32px rgba(56, 189, 248, 0.2);
+    object-fit: cover;
 }
 
 .contact-content {
