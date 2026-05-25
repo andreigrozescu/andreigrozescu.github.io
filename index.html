@@ -22,6 +22,7 @@
     <a href="#experience">Experience</a>
     <a href="#cover-letter">Letter</a>
     <a href="#skills">Skills</a>
+    <a href="#blog">Blog</a>
     <a href="#thesis">Thesis</a>
     <a href="#cv">CV</a>
     <a href="#contact">Contact</a>
@@ -131,6 +132,66 @@
                 <span class="skill-badge">Python</span>
                 <div class="skill-description">Scripting, automation and system development</div>
             </div>
+        </div>
+    </div>
+</section>
+
+<!-- BLOG DIVULGATIVO -->
+<section id="blog" class="scene">
+    <div class="container reveal">
+        <h2>Blog: Knowledge Graphs & Container Security</h2>
+
+        <div class="blog-intro card">
+            <p class="blog-intro-text">
+                <strong>Modern software infrastructures</strong> increasingly rely on container technologies such as Docker. However, this widespread adoption has introduced significant challenges related to cybersecurity, infrastructure visibility and vulnerability management.
+            </p>
+        </div>
+
+        <div class="blog-content">
+            <div class="blog-section card">
+                <h3>The Challenge: Visibility in Containerized Environments</h3>
+                <p>
+                    One of the main problems in containerized environments is the lack of operational traceability between deployed software components and the running infrastructure. Traditional container auditing tools generally focus on static image analysis, scanning containers in isolation without considering runtime context or the relationships between images, layers, packages and active containers across different hosts.
+                </p>
+                <p>
+                    This limitation creates important security and monitoring issues. In real-world infrastructures, administrators often struggle to determine which running containers are affected by a newly discovered vulnerability, which exact package versions are currently deployed, or which build instruction introduced a specific security risk.
+                </p>
+            </div>
+
+            <div class="blog-section card">
+                <h3>Solution: Knowledge Graphs for Semantic Analysis</h3>
+                <p>
+                    Semantic technologies and Knowledge Graphs provide a promising solution. A Knowledge Graph allows infrastructure components and their relationships to be represented in a structured and interconnected way. Instead of treating containers, images and packages as isolated entities, the system models them as part of a unified semantic graph that can be queried and analyzed dynamically.
+                </p>
+                <p>
+                    By connecting runtime information with semantic representations, the system significantly improves infrastructure visibility and security analysis capabilities. Using SPARQL queries, administrators can identify vulnerable containers, trace dependency relationships, audit configurations and analyze the origin of failures across the image build process.
+                </p>
+            </div>
+
+            <div class="blog-section card">
+                <h3>Real-World Impact & Scalability</h3>
+                <p>
+                    One of the most interesting aspects of this approach is the ability to correlate theoretical vulnerabilities with actual deployed assets in real time. Instead of simply detecting that a vulnerable package exists somewhere in an image repository, the system can determine whether that package is actively deployed within running containers across the infrastructure.
+                </p>
+                <p>
+                    Scalability tests have demonstrated that the architecture can efficiently handle infrastructures containing thousands of containers and millions of RDF triples, confirming the feasibility of semantic technologies in large-scale cybersecurity scenarios.
+                </p>
+            </div>
+
+            <div class="blog-section card highlight-section">
+                <h3>Beyond Containers: Broader Cybersecurity Applications</h3>
+                <p>
+                    Knowledge Graphs have growing applications across multiple areas of cybersecurity and cloud computing. They can enhance identity management systems, improve threat intelligence correlation, support forensic investigations and provide better visibility across complex distributed infrastructures.
+                </p>
+                <p>
+                    <em>As modern infrastructures continue becoming more dynamic and interconnected, the combination of semantic technologies, Knowledge Graphs and cybersecurity operations will likely play an increasingly important role in improving visibility, traceability and security analysis within enterprise environments.</em>
+                </p>
+            </div>
+        </div>
+
+        <div class="blog-cta card">
+            <p>Want to learn more about how these concepts were applied in practice?</p>
+            <a href="#thesis" class="btn accent">See My Thesis →</a>
         </div>
     </div>
 </section>
