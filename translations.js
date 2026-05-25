@@ -100,9 +100,9 @@ const translations = {
         cover_signature: "Sincerely,",
 
         // Presentation Section
-        presentation_title: "Academic Presentation",
-        presentation_subtitle: "Academic Oral Presentation",
-        presentation_description: "Watch my academic presentation about my professional journey, background, expertise, and academic research. In this presentation, I introduce myself, discuss my experience in IAM and cybersecurity, and present the key concepts and results from my Bachelor's Thesis on Knowledge Graph-Based Container Security Monitoring.",
+        presentation_title: "Oral Presentation",
+        presentation_subtitle: "Professional Introduction",
+        presentation_description: "Watch my oral presentation where I introduce myself and discuss my professional journey, background in cybersecurity and IAM, my experience at Accenture, and my passion for building secure systems and infrastructure visibility.",
 
         // Contact Section
         contact_title: "Contact",
@@ -212,9 +212,9 @@ const translations = {
         cover_signature: "Atentamente,",
 
         // Presentation Section
-        presentation_title: "Presentación Académica",
-        presentation_subtitle: "Presentación Oral Académica",
-        presentation_description: "Mira mi presentación académica sobre mi trayectoria profesional, formación, experiencia y investigación académica. En esta presentación, me presento a mí mismo, discuto mi experiencia en IAM y ciberseguridad, y presento los conceptos clave y resultados de mi Trabajo de Fin de Grado sobre Monitoreo de Seguridad de Contenedores Basado en Grafos de Conocimiento.",
+        presentation_title: "Presentación Oral",
+        presentation_subtitle: "Introducción Profesional",
+        presentation_description: "Mira mi presentación oral donde me presento a mí mismo y discuto mi trayectoria profesional, mi formación en ciberseguridad e IAM, mi experiencia en Accenture, y mi pasión por construir sistemas seguros y mejorar la visibilidad de infraestructuras.",
 
         // Contact Section
         contact_title: "Contacto",
