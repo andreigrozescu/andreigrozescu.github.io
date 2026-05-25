@@ -109,7 +109,7 @@ body {
 .scene {
     padding: 300px 0;
     margin-bottom: 200px;
-    scroll-margin-top: 200px;
+    scroll-margin-top: 100px;
 }
 
 /* CONTAINER */
@@ -382,9 +382,9 @@ h3 {
 
 /* THESIS SECTION */
 .thesis-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
     align-items: center;
 }
 
@@ -396,7 +396,7 @@ h3 {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 900px;
+    max-width: 100%;
 }
 
 .thesis-content h3 {
@@ -407,6 +407,11 @@ h3 {
     padding: 32px;
 }
 
+.thesis-content .btn {
+    align-self: flex-start;
+    margin-top: 20px;
+}
+
 .thesis-visual-side {
     display: flex;
     justify-content: center;
@@ -415,12 +420,13 @@ h3 {
 }
 
 .thesis-visual-side img {
-    max-width: 650px;
+    max-width: 100%;
     width: 100%;
     height: auto;
     border-radius: 16px;
     border: 1px solid rgba(56,189,248,0.15);
     box-shadow: 0 8px 32px rgba(56, 189, 248, 0.1);
+    object-fit: cover;
 }
 
 .thesis-visual {
@@ -611,7 +617,7 @@ h3 {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 750px;
+    max-width: 500px;
 }
 
 .contact-content.card {
