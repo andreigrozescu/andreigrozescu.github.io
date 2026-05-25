@@ -86,8 +86,8 @@ const translations = {
         cv_title: "Curriculum Vitae",
         cv_subtitle: "Full Professional CV",
         cv_description: "Download my complete curriculum vitae in your preferred language.",
-        cv_btn_en: "📄 CV English",
-        cv_btn_es: "📄 CV Español",
+        cv_btn_en: "CV English",
+        cv_btn_es: "CV Español",
 
         // Cover Letter Section
         cover_title: "Cover Letter",
@@ -198,8 +198,8 @@ const translations = {
         cv_title: "Currículum Vitae",
         cv_subtitle: "CV Profesional Completo",
         cv_description: "Descarga mi currículum completo en tu idioma preferido.",
-        cv_btn_en: "📄 CV English",
-        cv_btn_es: "📄 CV Español",
+        cv_btn_en: "CV English",
+        cv_btn_es: "CV Español",
 
         // Cover Letter Section
         cover_title: "Carta de Presentación",

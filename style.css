@@ -373,11 +373,12 @@ h3 {
     display: flex;
     gap: 16px;
     margin-top: 20px;
+    justify-content: center;
 }
 
 .cv-buttons .btn {
-    flex: 1;
-    text-align: center;
+    padding: 8px 16px;
+    font-size: 13px;
 }
 
 /* THESIS SECTION */
@@ -460,14 +461,16 @@ h3 {
 
 /* PRESENTATION SECTION */
 .presentation-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 40px;
     align-items: center;
 }
 
 .presentation-content {
     padding: 32px;
+    width: 100%;
+    max-width: 750px;
 }
 
 .presentation-content h3 {
@@ -488,6 +491,8 @@ h3 {
     overflow: hidden;
     border: 1px solid rgba(56,189,248,0.15);
     box-shadow: 0 8px 32px rgba(56, 189, 248, 0.1);
+    width: 100%;
+    max-width: 750px;
 }
 
 .presentation-video video {
@@ -621,7 +626,7 @@ h3 {
 }
 
 .contact-content.card {
-    padding: 32px;
+    padding: 24px;
 }
 
 .contact-content p {
