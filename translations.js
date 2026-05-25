@@ -8,6 +8,7 @@ const translations = {
         nav_blog: "Blog",
         nav_thesis: "Thesis",
         nav_cv: "CV",
+        nav_presentation: "Presentation",
         nav_contact: "Contact",
 
         // Hero
@@ -98,6 +99,11 @@ const translations = {
         cover_closing: "Thank you for your time and consideration.",
         cover_signature: "Sincerely,",
 
+        // Presentation Section
+        presentation_title: "Academic Presentation",
+        presentation_subtitle: "Bachelor's Thesis Oral Defense",
+        presentation_description: "Watch the academic presentation and oral defense of my Bachelor's Thesis on 'Knowledge Graph-Based Container Security Monitoring'. In this presentation, I discuss the motivation, technical approach, implementation details, and validation results of the security monitoring system.",
+
         // Contact Section
         contact_title: "Contact",
         contact_email: "Email:",
@@ -114,6 +120,7 @@ const translations = {
         nav_blog: "Blog",
         nav_thesis: "Tesis",
         nav_cv: "CV",
+        nav_presentation: "Presentación",
         nav_contact: "Contacto",
 
         // Hero
@@ -203,6 +210,11 @@ const translations = {
         cover_p4: "Estoy particularmente motivado por operaciones de ciberseguridad, detección de amenazas y mejora continua de sistemas seguros y escalables. Sería bienvenido contribuir mi experiencia en IAM y formación académica en ciberseguridad a un equipo enfocado en seguridad.",
         cover_closing: "Gracias por su tiempo y consideración.",
         cover_signature: "Atentamente,",
+
+        // Presentation Section
+        presentation_title: "Presentación Académica",
+        presentation_subtitle: "Defensa Oral del Trabajo de Fin de Grado",
+        presentation_description: "Mira la presentación académica y defensa oral de mi Trabajo de Fin de Grado sobre 'Monitoreo de Seguridad de Contenedores Basado en Grafos de Conocimiento'. En esta presentación, discuto la motivación, enfoque técnico, detalles de implementación y resultados de validación del sistema de monitoreo de seguridad.",
 
         // Contact Section
         contact_title: "Contacto",
